@@ -11,6 +11,13 @@ const NAV_HEIGHT = '60px';
 // Upload your image to imgur.com, imgbb.com, or use any direct image link
 const PHOTO_URL = '/profile.png';
 
+// Company logos
+const COMPANY_LOGOS = {
+  'CDS Global': '/cds-global-logo.png',
+  'Iowa State University': '/iowa-state-logo.png',
+  'Accenture': '/accenture-logo.png'
+};
+
 /* --------------------  DATA  -------------------- */
 const SKILLS = [
   'Python','C#','TypeScript','React','JavaScript','SQL','Java',
@@ -24,6 +31,7 @@ const EXPERIENCE = [
   {
     title:"Process Automation and AI Intern",
     company:"CDS Global",
+    companyLogo: COMPANY_LOGOS['CDS Global'],
     duration:"May 2025 – Present | Des Moines",
     points:[
       "Designed and deployed an end-to-end <strong>Document AI</strong> platform using <strong>Python</strong> microservices (<strong>FastAPI</strong>, <strong>Flask</strong>), containerized with <strong>Docker</strong> and orchestrated on <strong>Kubernetes</strong> for scalable processing of 10K+ document streams.",
@@ -35,6 +43,7 @@ const EXPERIENCE = [
   {
     title:"Graduate Research Assistant",
     company:"Iowa State University",
+    companyLogo: COMPANY_LOGOS['Iowa State University'],
     duration:"Nov 2024 – Present | Ames",
     points:[
       "Architected and deployed a <strong>RAG tutoring system</strong> using <strong>Llama 2</strong> and <strong>Hugging Face</strong> on <strong>Kubernetes</strong>, maintaining <strong>99.9% uptime</strong> and scalable AI delivery.",
@@ -47,6 +56,7 @@ const EXPERIENCE = [
   {
     title:"Software Developer in App Development",
     company:"Iowa State University - AI SAFEHANDS",
+    companyLogo: COMPANY_LOGOS['Iowa State University'],
     duration:"Feb 2024 – Sept 2024 | Ames",
     points:[
       "Designed and implemented the frontend in <strong>React</strong> and <strong>TypeScript</strong>, optimizing components and build settings to achieve <strong>30% faster load times</strong>.",
@@ -58,6 +68,7 @@ const EXPERIENCE = [
   {
     title:"App Development Associate",
     company:"Accenture",
+    companyLogo: COMPANY_LOGOS['Accenture'],
     duration:"Oct 2022 – Dec 2023 | Bengaluru",
     points:[
       "Designed and optimized <strong>.NET Core REST APIs</strong> with <strong>distributed caching</strong>, achieving <strong>2.4× higher throughput</strong> and lower latency.",
@@ -102,53 +113,56 @@ const PROJECTS = [
     tech:"Python, TensorFlow, Keras, NumPy, Computer Vision",
     description:"Designed an AI-powered medical imaging system to explore how image processing and deep learning can assist in early and accurate detection of lung diseases. Trained deep learning models achieving 94% accuracy in detecting pneumonia from chest X-ray scans, demonstrating how computer vision can support radiologists by automating scan interpretation and making diagnosis faster, more reliable, and scalable.",
     highlights:["94% Accuracy","Medical AI","Deep Learning"],
-    github:"https://github.com/yourusername/ChestXray-Scan" // Replace with your actual repo link
+    github:"https://github.com/yourusername/ChestXray-Scan"
   },
   {
     title:"Emotion Detector AI",
     tech:"Python 3.12, Transformers, PyTorch, Matplotlib, Gradio",
     description:"Built a lightweight NLP application designed to identify and visualize emotions from free-form text in real time. Leveraging state-of-the-art transformer models, the system achieves 92% accuracy in emotion classification, providing instant feedback through an interactive Gradio interface with emotion distribution visualizations.",
     highlights:["92% Accuracy","Real-time NLP","Interactive UI"],
-    github:"https://github.com/yourusername/emotion-detector" // Replace with your actual repo link
+    github:"https://github.com/yourusername/emotion-detector"
   },
   {
     title:"AI Resume Analyser",
     tech:"Python, NLP, Machine Learning, Jupyter Notebook",
     description:"Built a web application that compares resumes with job descriptions and returns similarity matches using AI. Helps job seekers optimize their resumes for specific positions.",
     highlights:["NLP Processing","AI Matching","Career Tech"],
-    github:"https://github.com/yourusername/AI-Resume_Analyser" // Replace with your actual repo link
+    github:"https://github.com/yourusername/AI-Resume_Analyser"
   },
   {
     title:"Compiler (C-Compiler)",
     tech:"Python, Compiler Design, Programming Languages",
     description:"Implemented a compiler for C language from scratch, including lexical analysis, parsing, semantic analysis, and code generation phases.",
     highlights:["System Programming","Language Design","Code Generation"],
-    github:"https://github.com/yourusername/Compiler---C-Compiler" // Replace with your actual repo link
+    github:"https://github.com/yourusername/Compiler---C-Compiler"
   },
   {
     title:"Encryption and Decryption using QKD",
     tech:"Python, Quantum Computing, Cryptography",
     description:"Developed a quantum key distribution system for secure encryption and decryption, exploring quantum computing applications in cybersecurity.",
     highlights:["Quantum Security","Cryptography","Research Project"],
-    github:"https://github.com/yourusername/Encryption-and-Decryption-using-QKD" // Replace with your actual repo link
+    github:"https://github.com/yourusername/Encryption-and-Decryption-using-QKD"
   }
 ];
 
 const TESTIMONIALS = [
   {
-    name:"Dr. Sarah Mitchell",
-    role:"Research Supervisor, Iowa State University",
-    text:"Yasaswini's work on the RAG tutoring system exceeded expectations. Her technical depth and attention to accessibility standards set a new benchmark for our projects."
+    name:"Tammy Griggs",
+    role:"IT Developer and Manager, CDS Global",
+    text:"It's been a real pleasure having Yasaswini on our development team at CDS Global. From day one, she brought a rare combination of curiosity, technical depth, and genuine enthusiasm for solving problems, especially as we've been integrating AI into our existing systems. She is playing a key role in helping us explore and implement AI enhancements to our image scanning platform, turning complex ideas into practical, working solutions. Beyond her technical skill, she's been collaborative, thoughtful, and quick to contribute ideas that make a difference. She's shown the kind of initiative and forward-thinking mindset that every team hopes for. I'm incredibly proud of what she's accomplished here and excited to see what she does next as she moves forward in her AI career.",
+    photo:"/tammy.png"
   },
   {
-    name:"Michael Chen",
-    role:"Senior Manager, CDS Global",
-    text:"The Document AI platform Yasaswini built transformed our processing workflow. Her ability to deliver production-grade solutions under tight deadlines is remarkable."
+    name:"Dr. Sarah Mitchell",
+    role:"Research Supervisor, Iowa State University",
+    text:"Yasaswini's work on the RAG tutoring system exceeded expectations. Her technical depth and attention to accessibility standards set a new benchmark for our projects.",
+    photo:"https://placehold.co/60x60/F6A25A/FFF?text=SM"
   },
   {
     name:"Priya Sharma",
     role:"Tech Lead, Accenture",
-    text:"Working with Yasaswini was a pleasure. She consistently delivered optimized, scalable solutions and her knowledge of modern DevOps practices is exceptional."
+    text:"Working with Yasaswini was a pleasure. She consistently delivered optimized, scalable solutions and her knowledge of modern DevOps practices is exceptional.",
+    photo:"https://placehold.co/60x60/F6A25A/FFF?text=PS"
   }
 ];
 
@@ -176,6 +190,45 @@ const GlobalStyles = () => (
     @media (min-width: 769px) {
       .mobile-menu { display:none !important; }
       .mobile-menu-btn { display:none !important; }
+    }
+
+    /* Company Logo Styling */
+    .company-logo {
+      width: 48px;
+      height: 48px;
+      border-radius: 8px;
+      object-fit: contain;
+      background: white;
+      padding: 6px;
+      border: 1px solid ${ACCENT_COLOR}30;
+      box-shadow: 0 2px 8px ${ACCENT_COLOR}20;
+      flex-shrink: 0;
+    }
+
+    .experience-header {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      margin-bottom: 8px;
+    }
+
+    .company-info {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .job-title {
+      font-weight: 700;
+      font-size: clamp(0.95rem, 2.2vw, 1.1rem);
+      color: ${TEXT_DARK};
+      margin: 0;
+    }
+
+    .company-name {
+      font-size: clamp(0.85rem, 1.8vw, 0.95rem);
+      color: ${ACCENT_COLOR};
+      font-weight: 600;
+      margin: 0;
     }
 
     /* Marquee */
@@ -316,7 +369,7 @@ const AnimatedLaptopSeparator = () => {
         </div>
         
         <p style={{marginTop:'1.2rem',color:ACCENT_COLOR,fontWeight:600,letterSpacing:'1px',textAlign:'center',fontSize:'clamp(0.85rem, 1.8vw, 1rem)'}}>
-            Engineering Intelligent Systems with Purpose
+          Where Creativity Meets Engineering
         </p>
       </div>
     </section>
@@ -408,7 +461,7 @@ const App = () => {
           
           {/* Desktop Nav */}
           <div className="nav-links" style={{display:'flex',gap:'1.5rem',fontWeight:500}}>
-            {['About','Experience','Skills','Projects','Education','Certifications','Contact'].map(item=>(
+            {['About','Education','Experience','Skills','Projects','Certifications','Contact'].map(item=>(
               <button key={item} onClick={()=>scrollTo(item.toLowerCase())}
                       className="nav-btn" style={{background:'none',border:'none',cursor:'pointer',color:TEXT_SUBTLE,fontSize:'0.95rem'}}>
                 {item}
@@ -431,7 +484,7 @@ const App = () => {
             padding:'1rem',display:'flex',flexDirection:'column',gap:'0.8rem',
             boxShadow:`0 4px 12px ${ACCENT_COLOR}30`
           }}>
-            {['About','Experience','Skills','Projects','Education','Certifications','Contact'].map(item=>(
+            {['About','Education','Experience','Skills','Projects','Certifications','Contact'].map(item=>(
               <button key={item} onClick={()=>scrollTo(item.toLowerCase())}
                       style={{background:'none',border:'none',cursor:'pointer',color:TEXT_SUBTLE,
                               padding:'0.8rem',textAlign:'left',fontWeight:500,fontSize:'1rem'}}>
@@ -513,6 +566,38 @@ const App = () => {
         {/* LAPTOP SEPARATOR */}
         <AnimatedLaptopSeparator/>
 
+        {/* EDUCATION */}
+        <section id="education" style={{padding:'2.5rem 1rem',background:'#fff'}}>
+          <h3 style={{textAlign:'center',fontSize:'clamp(1.4rem, 3.5vw, 1.8rem)',fontWeight:800,marginBottom:'1.2rem'}}>Education</h3>
+          <div style={{maxWidth:'800px',margin:'0 auto'}}>
+            <div style={{
+              background:BASE_COLOR,padding:'1.3rem',borderLeft:`4px solid ${ACCENT_COLOR}`,
+              borderRadius:'12px',boxShadow:`0 4px 15px ${ACCENT_COLOR}15`
+            }}>
+              <h4 style={{fontWeight:700,fontSize:'clamp(1rem, 2.3vw, 1.2rem)',color:TEXT_DARK,marginBottom:'0.2rem'}}>{EDUCATION.degree}</h4>
+              <p style={{fontSize:'clamp(0.85rem, 1.8vw, 0.95rem)',color:ACCENT_COLOR,fontWeight:600,marginBottom:'0.2rem'}}>
+                {EDUCATION.school} | {EDUCATION.location}
+              </p>
+              <p style={{fontSize:'clamp(0.8rem, 1.8vw, 0.9rem)',color:TEXT_SUBTLE,marginBottom:'0.7rem'}}>
+                Expected Graduation: {EDUCATION.graduation}
+              </p>
+              
+              <div style={{marginTop:'0.8rem'}}>
+                <p style={{fontWeight:600,color:TEXT_DARK,marginBottom:'0.3rem',fontSize:'clamp(0.85rem, 1.8vw, 0.95rem)'}}>Relevant Coursework:</p>
+                <div style={{display:'flex',flexWrap:'wrap',gap:'0.35rem'}}>
+                  {EDUCATION.coursework.map((course,i)=>(
+                    <span key={i} style={{
+                      background:'#fff',color:TEXT_SUBTLE,padding:'0.18rem 0.55rem',
+                      borderRadius:'14px',fontSize:'clamp(0.68rem, 1.6vw, 0.76rem)',
+                      border:`1px solid ${ACCENT_COLOR}30`
+                    }}>{course}</span>
+                  ))}
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
         {/* EXPERIENCE */}
         <section id="experience" style={{padding:'2.5rem 1rem'}}>
           <h3 style={{textAlign:'center',fontSize:'clamp(1.4rem, 3.5vw, 1.8rem)',fontWeight:800,marginBottom:'1.2rem'}}>Professional Experience</h3>
@@ -522,7 +607,19 @@ const App = () => {
                 background:'#fff',padding:'1.5rem',borderLeft:`4px solid ${ACCENT_COLOR}`,
                 borderRadius:'8px',boxShadow:`0 4px 15px ${ACCENT_COLOR}10`,marginBottom:'1rem'
               }}>
-                <h4 style={{fontWeight:700,fontSize:'clamp(0.95rem, 2.2vw, 1.1rem)'}}>{job.title} | <span style={{color:ACCENT_COLOR}}>{job.company}</span></h4>
+                <div className="experience-header">
+                  {job.companyLogo && (
+                    <img 
+                      src={job.companyLogo} 
+                      alt={`${job.company} logo`}
+                      className="company-logo"
+                    />
+                  )}
+                  <div className="company-info">
+                    <h4 className="job-title">{job.title}</h4>
+                    <p className="company-name">{job.company}</p>
+                  </div>
+                </div>
                 <p style={{fontSize:'clamp(0.75rem, 1.8vw, 0.85rem)',color:TEXT_SUBTLE,marginBottom:'0.5rem'}}>{job.duration}</p>
                 <ul style={{marginLeft:'1rem',color:TEXT_SUBTLE,lineHeight:1.5,fontSize:'clamp(0.8rem, 1.8vw, 0.9rem)'}}>
                   {job.points.map((p,j)=><li key={j} style={{marginBottom:'0.25rem'}} dangerouslySetInnerHTML={{__html: p}}/>)}
@@ -532,8 +629,8 @@ const App = () => {
           </div>
         </section>
 
-        {/* SKILLS MARQUEE */}
-        <section id="skills" style={{margin:'2.5rem 0'}}>
+        {/* SKILLS MARQUEE - REDUCED SPACING */}
+        <section id="skills" style={{margin:'1.5rem 0'}}>
           <h3 style={{textAlign:'center',fontSize:'clamp(1.4rem, 3.5vw, 1.8rem)',fontWeight:800,marginBottom:'0.8rem',padding:'0 1rem'}}>Technical Expertise</h3>
           <ScrollingSkills/>
         </section>
@@ -575,39 +672,35 @@ const App = () => {
           </div>
         </section>
 
-        {/* EDUCATION */}
-        <section id="education" style={{padding:'2.5rem 1rem',background:'#fff'}}>
-          <h3 style={{textAlign:'center',fontSize:'clamp(1.4rem, 3.5vw, 1.8rem)',fontWeight:800,marginBottom:'1.2rem'}}>Education</h3>
-          <div style={{maxWidth:'800px',margin:'0 auto'}}>
-            <div style={{
-              background:BASE_COLOR,padding:'1.3rem',borderLeft:`4px solid ${ACCENT_COLOR}`,
-              borderRadius:'12px',boxShadow:`0 4px 15px ${ACCENT_COLOR}15`
-            }}>
-              <h4 style={{fontWeight:700,fontSize:'clamp(1rem, 2.3vw, 1.2rem)',color:TEXT_DARK,marginBottom:'0.2rem'}}>{EDUCATION.degree}</h4>
-              <p style={{fontSize:'clamp(0.85rem, 1.8vw, 0.95rem)',color:ACCENT_COLOR,fontWeight:600,marginBottom:'0.2rem'}}>
-                {EDUCATION.school} | {EDUCATION.location}
-              </p>
-              <p style={{fontSize:'clamp(0.8rem, 1.8vw, 0.9rem)',color:TEXT_SUBTLE,marginBottom:'0.7rem'}}>
-                Expected Graduation: {EDUCATION.graduation}
-              </p>
-              
-              <div style={{marginTop:'0.8rem'}}>
-                <p style={{fontWeight:600,color:TEXT_DARK,marginBottom:'0.3rem',fontSize:'clamp(0.85rem, 1.8vw, 0.95rem)'}}>Relevant Coursework:</p>
-                <div style={{display:'flex',flexWrap:'wrap',gap:'0.35rem'}}>
-                  {EDUCATION.coursework.map((course,i)=>(
-                    <span key={i} style={{
-                      background:'#fff',color:TEXT_SUBTLE,padding:'0.18rem 0.55rem',
-                      borderRadius:'14px',fontSize:'clamp(0.68rem, 1.6vw, 0.76rem)',
-                      border:`1px solid ${ACCENT_COLOR}30`
-                    }}>{course}</span>
-                  ))}
+        {/* TESTIMONIALS - REDUCED SPACING & UPDATED LAYOUT */}
+        <section id="testimonials" style={{padding:'1.5rem 1rem',background:BASE_COLOR}}>
+          <h3 style={{textAlign:'center',fontSize:'clamp(1.4rem, 3.5vw, 1.8rem)',fontWeight:800,marginBottom:'1rem'}}>What People Say</h3>
+          <div style={{maxWidth:'1100px',margin:'0 auto',display:'flex',flexDirection:'column',gap:'1rem'}}>
+            {TESTIMONIALS.map((test,i)=>(
+              <div key={i} style={{
+                background:'#fff',padding:'1.2rem',borderLeft:`4px solid ${ACCENT_COLOR}`,
+                borderRadius:'8px',boxShadow:`0 4px 12px ${ACCENT_COLOR}10`
+              }}>
+                <div style={{flex:1}}>
+                  <p style={{color:TEXT_DARK,fontStyle:'italic',lineHeight:1.5,marginBottom:'0.8rem',fontSize:'clamp(0.78rem, 1.8vw, 0.88rem)'}}>"{test.text}"</p>
+                  
+                  {/* Photo and name together */}
+                  <div style={{borderTop:`1px solid ${ACCENT_COLOR}30`,paddingTop:'0.7rem',display:'flex',alignItems:'center',gap:'0.8rem'}}>
+                    <img src={test.photo} alt={test.name} style={{
+                      width:'50px',height:'50px',borderRadius:'50%',
+                      objectFit:'cover',border:`2px solid ${ACCENT_COLOR}`,
+                      flexShrink:0
+                    }}/>
+                    <div>
+                      <p style={{fontWeight:700,color:TEXT_DARK,fontSize:'clamp(0.82rem, 1.8vw, 0.92rem)',marginBottom:'0.1rem'}}>{test.name}</p>
+                      <p style={{fontSize:'clamp(0.68rem, 1.6vw, 0.78rem)',color:TEXT_SUBTLE,lineHeight:1.3}}>{test.role}</p>
+                    </div>
+                  </div>
                 </div>
               </div>
-            </div>
+            ))}
           </div>
         </section>
-
-        
 
         {/* CERTIFICATIONS */}
         <section id="certifications" style={{padding:'2.5rem 1rem',background:'#fff'}}>
@@ -621,25 +714,6 @@ const App = () => {
               }}>
                 <h4 style={{fontWeight:700,fontSize:'clamp(0.95rem, 2.2vw, 1.1rem)',marginBottom:'0.4rem',color:TEXT_DARK,lineHeight:1.4}}>{cert.title}</h4>
                 <p style={{fontSize:'clamp(0.8rem, 1.8vw, 0.9rem)',color:ACCENT_COLOR,fontWeight:600}}>{cert.issuer}</p>
-              </div>
-            ))}
-          </div>
-        </section>
-
-        {/* TESTIMONIALS */}
-        <section id="testimonials" style={{padding:'2.5rem 1rem',background:BASE_COLOR}}>
-          <h3 style={{textAlign:'center',fontSize:'clamp(1.4rem, 3.5vw, 1.8rem)',fontWeight:800,marginBottom:'1.2rem'}}>What People Say</h3>
-          <div style={{maxWidth:'1000px',margin:'0 auto',display:'grid',gridTemplateColumns:'repeat(auto-fit, minmax(280px, 1fr))',gap:'1.5rem'}}>
-            {TESTIMONIALS.map((test,i)=>(
-              <div key={i} style={{
-                background:'#fff',padding:'1.5rem',borderLeft:`4px solid ${ACCENT_COLOR}`,
-                borderRadius:'8px',boxShadow:`0 4px 12px ${ACCENT_COLOR}10`
-              }}>
-                <p style={{color:TEXT_DARK,fontStyle:'italic',lineHeight:1.6,marginBottom:'0.8rem',fontSize:'clamp(0.8rem, 1.8vw, 0.9rem)'}}>"{test.text}"</p>
-                <div style={{borderTop:`1px solid ${ACCENT_COLOR}30`,paddingTop:'0.8rem'}}>
-                  <p style={{fontWeight:700,color:TEXT_DARK,fontSize:'clamp(0.85rem, 1.8vw, 0.95rem)'}}>{test.name}</p>
-                  <p style={{fontSize:'clamp(0.7rem, 1.6vw, 0.8rem)',color:TEXT_SUBTLE}}>{test.role}</p>
-                </div>
               </div>
             ))}
           </div>
@@ -700,29 +774,57 @@ const App = () => {
               <span>GitHub Profile</span>
             </a>
 
-            {/* Download Resume Button */}
-            <a href="/path-to-your-resume.pdf" download="Yasaswini_Tatikonda_Resume.pdf" style={{
-              display:'flex',alignItems:'center',justifyContent:'center',gap:'0.5rem',
-              color:'#fff',background:ACCENT_COLOR,textDecoration:'none',
-              fontSize:'clamp(0.88rem, 1.8vw, 0.98rem)',padding:'0.7rem 1rem',
-              borderRadius:'8px',fontWeight:600,marginTop:'0.5rem',
-              border:`2px solid ${ACCENT_COLOR}`,transition:'all 0.2s'
-            }}
-            onMouseEnter={(e) => {
-              e.currentTarget.style.background = 'transparent';
-              e.currentTarget.style.color = ACCENT_COLOR;
-            }}
-            onMouseLeave={(e) => {
-              e.currentTarget.style.background = ACCENT_COLOR;
-              e.currentTarget.style.color = '#fff';
-            }}>
-              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M21 15V19C21 19.5304 20.7893 20.0391 20.4142 20.4142C20.0391 20.7893 19.5304 21 19 21H5C4.46957 21 3.96086 20.7893 3.58579 20.4142C3.21071 20.0391 3 19.5304 3 19V15" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
-                <path d="M7 10L12 15L17 10" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
-                <path d="M12 15V3" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
-              </svg>
-              <span>Download Resume</span>
-            </a>
+            {/* SMALLER SIDE-BY-SIDE RESUME BUTTONS */}
+            <div style={{display:'flex',gap:'0.6rem',marginTop:'0.5rem'}}>
+              <a href="/path-to-your-resume.pdf" target="_blank" rel="noopener noreferrer" style={{
+                display:'flex',alignItems:'center',justifyContent:'center',gap:'0.4rem',
+                color:ACCENT_COLOR,background:'transparent',textDecoration:'none',
+                fontSize:'clamp(0.8rem, 1.6vw, 0.88rem)',padding:'0.55rem 0.9rem',
+                borderRadius:'8px',fontWeight:600,flex:'1',
+                border:`2px solid ${ACCENT_COLOR}`,transition:'all 0.2s',
+                whiteSpace:'nowrap'
+              }}
+              onMouseEnter={(e) => {
+                e.currentTarget.style.background = ACCENT_COLOR;
+                e.currentTarget.style.color = '#fff';
+              }}
+              onMouseLeave={(e) => {
+                e.currentTarget.style.background = 'transparent';
+                e.currentTarget.style.color = ACCENT_COLOR;
+              }}>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M14 2H6C5.46957 2 4.96086 2.21071 4.58579 2.58579C4.21071 2.96086 4 3.46957 4 4V20C4 20.5304 4.21071 21.0391 4.58579 21.4142C4.96086 21.7893 5.46957 22 6 22H18C18.5304 22 19.0391 21.7893 19.4142 21.4142C19.7893 21.0391 20 20.5304 20 20V8L14 2Z" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+                  <path d="M14 2V8H20" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+                  <path d="M12 18V12" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+                  <path d="M9 15L12 12L15 15" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+                </svg>
+                <span>View Resume</span>
+              </a>
+
+              <a href="/path-to-your-resume.pdf" download="Yasaswini_Tatikonda_Resume.pdf" style={{
+                display:'flex',alignItems:'center',justifyContent:'center',gap:'0.4rem',
+                color:'#fff',background:ACCENT_COLOR,textDecoration:'none',
+                fontSize:'clamp(0.8rem, 1.6vw, 0.88rem)',padding:'0.55rem 0.9rem',
+                borderRadius:'8px',fontWeight:600,flex:'1',
+                border:`2px solid ${ACCENT_COLOR}`,transition:'all 0.2s',
+                whiteSpace:'nowrap'
+              }}
+              onMouseEnter={(e) => {
+                e.currentTarget.style.background = 'transparent';
+                e.currentTarget.style.color = ACCENT_COLOR;
+              }}
+              onMouseLeave={(e) => {
+                e.currentTarget.style.background = ACCENT_COLOR;
+                e.currentTarget.style.color = '#fff';
+              }}>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M21 15V19C21 19.5304 20.7893 20.0391 20.4142 20.4142C20.0391 20.7893 19.5304 21 19 21H5C4.46957 21 3.96086 20.7893 3.58579 20.4142C3.21071 20.0391 3 19.5304 3 19V15" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+                  <path d="M7 10L12 15L17 10" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+                  <path d="M12 15V3" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+                </svg>
+                <span>Download Resume</span>
+              </a>
+            </div>
           </div>
 
           <div style={{borderTop:`1px solid ${ACCENT_COLOR}30`,paddingTop:'1rem'}}>
