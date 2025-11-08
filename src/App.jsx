@@ -587,7 +587,7 @@ const AnimatedLaptopSeparator = () => {
           maxWidth:'600px',
           lineHeight:1.8
         }}>
-          "I've shipped production systems handling millions of requests. I think in systems, not just code. That's what I bring to every project."
+          "I keep things simple, consistent, and dependable. That's how I build software that lasts."
         </p>
       </div>
     </section>
