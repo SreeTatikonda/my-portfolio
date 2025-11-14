@@ -170,6 +170,15 @@ const PROJECTS = [
     github:"https://github.com/SreeTatikonda/ChestXray-Scan"
   },
   {
+    title: "Multi-Modal RAG System",
+    tech: "Python, Hugging Face, Vision Transformers, Sentence Embeddings, Vector Databases",
+    techs: ["Python", "LLMs", "Computer Vision", "RAG", "Embeddings"],
+    description: "Developed a Multi-Modal Retrieval-Augmented Generation system capable of understanding and integrating information from both images and text documents. Implemented unified embedding pipelines, vector search, multimodal retrieval, and grounded LLM reasoning for accurate, context-aware responses.",
+    highlights: ["Multi-Modal Retrieval", "LLM Reasoning", "Unified Embeddings"],
+    image: "/multimodalrag.png",
+    github: "https://github.com/SreeTatikonda/RAG_projects"
+  }
+  {
     title:"Emotion Detection from Text",
     tech:"Python 3.12, Transformers, PyTorch, Matplotlib, Gradio",
     techs: ["Python", "NLP", "PyTorch"],
