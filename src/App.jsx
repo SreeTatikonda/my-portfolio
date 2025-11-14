@@ -484,10 +484,11 @@ const AnimatedLaptopSeparator = () => {
   const [isDeleting, setIsDeleting] = useState(false);
   
   const phrases = React.useMemo(() => [
-    '> Building intelligent systems that scale',
-    '> AI meets full-stack engineering',
-    '> From concept to production',
-    '> Solving complex problems, elegantly'
+    '> I build software that actually works.',
+    '> Full-stack engineering with an AI edge ',
+    '> Clean logic. Clear solutions',
+    '> Turning ideas into real, scalable systems',
+    '> Breaking problems down, building solutions up'
   ], []);
   
   const [phraseIndex, setPhraseIndex] = useState(0);
