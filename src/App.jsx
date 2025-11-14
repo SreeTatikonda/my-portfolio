@@ -1379,7 +1379,7 @@ const App = () => {
             WebkitTextFillColor:'transparent',
             backgroundClip:'text'
           }}>
-            Select Works
+            My Projects 
           </h3>
           <div style={{
             maxWidth:'1100px',margin:'0 auto',
