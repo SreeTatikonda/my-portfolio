@@ -177,7 +177,7 @@ const PROJECTS = [
     highlights: ["Multi-Modal Retrieval", "LLM Reasoning", "Unified Embeddings"],
     image: "/multimodalrag.png",
     github: "https://github.com/SreeTatikonda/RAG_projects"
-  }
+  },
   {
     title:"Emotion Detection from Text",
     tech:"Python 3.12, Transformers, PyTorch, Matplotlib, Gradio",
