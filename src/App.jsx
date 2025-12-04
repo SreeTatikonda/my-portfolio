@@ -1177,58 +1177,59 @@ const App = () => {
         </section>
 
         {/* ABOUT */}
-        <section id="about" style={{
-          background:'linear-gradient(135deg, #FFFFFF 0%, rgba(246, 162, 90, 0.05) 100%)',
-          borderTop:`4px solid ${ACCENT_COLOR}`,
-          borderRadius:'16px',padding:'3rem 2rem',margin:'0 1rem 4rem',
-          boxShadow:`0 0 30px ${ACCENT_COLOR}15`
-        }}>
-          <h3 style={{
-            textAlign:'center',fontSize:'clamp(1.5rem, 3.5vw, 2rem)',
-            fontWeight:900,marginBottom:'1.5rem',
-            background:GRADIENT_ACCENT,
-            WebkitBackgroundClip:'text',
-            WebkitTextFillColor:'transparent',
-            backgroundClip:'text'
-          }}>
-            <h3>About Me</h3>
-<div style={{maxWidth:'900px',margin:'0 auto'}}>
-  <p style={{
-    color:TEXT_SUBTLE,fontSize:'clamp(0.95rem, 1.8vw, 1.05rem)',
-    marginBottom:'1.2rem',lineHeight:1.8,fontWeight:500
+<section id="about" style={{
+  background:'linear-gradient(135deg, #FFFFFF 0%, rgba(246, 162, 90, 0.05) 100%)',
+  borderTop:`4px solid ${ACCENT_COLOR}`,
+  borderRadius:'16px',padding:'3rem 2rem',margin:'0 1rem 4rem',
+  boxShadow:`0 0 30px ${ACCENT_COLOR}15`
+}}>
+  <h3 style={{
+    textAlign:'center',fontSize:'clamp(1.5rem, 3.5vw, 2rem)',
+    fontWeight:900,marginBottom:'1.5rem',
+    background:GRADIENT_ACCENT,
+    WebkitBackgroundClip:'text',
+    WebkitTextFillColor:'transparent',
+    backgroundClip:'text'
   }}>
-    I’m a software engineer with <strong>3+ years of experience</strong> building intelligent systems and scalable full-stack applications. I focus on turning complex problems into clear, reliable solutions across <strong>AI pipelines, backend services,</strong> and <strong>cloud architecture</strong>.
-  </p>
-  <p style={{
-    color:TEXT_SUBTLE,fontSize:'clamp(0.95rem, 1.8vw, 1.05rem)',
-    marginBottom:'0',lineHeight:1.8,fontWeight:500
-  }}>
-    I design reliable systems and create software that makes life simpler.
-  </p>
-</div>
+    About Me
+  </h3>
+  
+  <div style={{maxWidth:'900px',margin:'0 auto'}}>
+    <p style={{
+      color:TEXT_SUBTLE,fontSize:'clamp(0.95rem, 1.8vw, 1.05rem)',
+      marginBottom:'1.2rem',lineHeight:1.8,fontWeight:500
+    }}>
+      I'm a software engineer with <strong>3+ years of experience</strong> building intelligent systems and scalable full-stack applications. I focus on turning complex problems into clear, reliable solutions across <strong>AI pipelines, backend services,</strong> and <strong>cloud architecture</strong>.
+    </p>
+    <p style={{
+      color:TEXT_SUBTLE,fontSize:'clamp(0.95rem, 1.8vw, 1.05rem)',
+      marginBottom:'2rem',lineHeight:1.8,fontWeight:500
+    }}>
+      I design reliable systems and create software that makes life simpler.
+    </p>
 
-            <h4 style={{
-              textAlign:'center',
-              fontSize:'clamp(1.2rem, 2.8vw, 1.4rem)',
-              fontWeight:800,
-              marginTop:'2rem',
-              marginBottom:'1.2rem',
-              color:ACCENT_COLOR
-            }}>
-              Core Technologies
-            </h4>
-            <div style={{
-              display:'flex',
-              flexWrap:'wrap',
-              justifyContent:'center',
-              gap:'0.8rem'
-            }}>
-              {['Python', 'React', 'TypeScript', 'C#', 'JavaScript', 'HTML', 'CSS', 'SQL', '.NET Core', 'FastAPI', 'Kubernetes', 'AWS', 'PyTorch', 'LLMs', 'NLP'].map(tech => (
-                <TechIconBadge key={tech} tech={tech} />
-              ))}
-            </div>
-          </div>
-        </section>
+    <h4 style={{
+      textAlign:'center',
+      fontSize:'clamp(1.2rem, 2.8vw, 1.4rem)',
+      fontWeight:800,
+      marginTop:'2rem',
+      marginBottom:'1.2rem',
+      color:ACCENT_COLOR
+    }}>
+      Core Technologies
+    </h4>
+    <div style={{
+      display:'flex',
+      flexWrap:'wrap',
+      justifyContent:'center',
+      gap:'0.8rem'
+    }}>
+      {['Python', 'React', 'TypeScript', 'C#', 'JavaScript', 'HTML', 'CSS', 'SQL', '.NET Core', 'FastAPI', 'Kubernetes', 'AWS', 'PyTorch', 'LLMs', 'NLP'].map(tech => (
+        <TechIconBadge key={tech} tech={tech} />
+      ))}
+    </div>
+  </div>
+</section>
 
         {/* LAPTOP SEPARATOR */}
         <AnimatedLaptopSeparator/>
