@@ -100,7 +100,7 @@ const EXPERIENCE = [
     company:"Iowa State University",
     companyLogo: COMPANY_LOGOS['Iowa State University'],
     duration:"Feb 2024 – Sept 2025 | Ames",
-    techStack: ["React", "TypeScript", ".NET Core", "SQL Server", "Azure DevOps", "CI/CD Pipelines"],
+   techStack: ["React Native", "JavaScript ES6+", "Redux", "Android CameraX", "Python", "Flask", "JWT", "TensorFlow", "Keras", "Celery", "Redis", "PostgreSQL", "MongoDB", "SQLAlchemy", "pytest"],
     points:[
   "Built cross-platform recommendation app using React Native, JavaScript ES6+, and Redux with 95% feature parity",
   "Integrated Android CameraX SDK with React Native for image capture and preprocessing, handling 1000+ daily requests",
@@ -120,7 +120,7 @@ const EXPERIENCE = [
     company:"Accenture",
     companyLogo: COMPANY_LOGOS['Accenture'],
     duration:"Oct 2022 – Dec 2023 | Bengaluru",
-    techStack: ["C#", ".NET Core", "SQL Server", "AWS", "Azure DevOps", "OAuth 2.0"],
+    techStack: ["Java", "Spring Boot", "Spring MVC", "Hibernate ORM", "SQL Server", "Redis", "AWS Lambda", "AWS S3", "AWS EC2","AWS CloudWatch", "Docker","Jenkins","Spring Security","OAuth 2.0","JWT","IAM"],
     points:[
   "Developed Java microservices using Spring Boot, Hibernate ORM, and SQL Server processing 100,000+ daily transactions with 99.9% uptime",
   "Built RESTful APIs with Spring Boot and Spring MVC handling business logic and transaction management across distributed systems",
