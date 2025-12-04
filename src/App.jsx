@@ -1191,26 +1191,21 @@ const App = () => {
             WebkitTextFillColor:'transparent',
             backgroundClip:'text'
           }}>
-            About Me
-          </h3>
-          <div style={{maxWidth:'900px',margin:'0 auto'}}>
-            <p style={{
-              color:TEXT_SUBTLE,fontSize:'clamp(0.95rem, 1.8vw, 1.05rem)',
-              marginBottom:'1.2rem',lineHeight:1.8,fontWeight:500
-            }}>
-   <p style={{
-  color:TEXT_SUBTLE,fontSize:'clamp(0.95rem, 1.8vw, 1.05rem)',
-  marginBottom:'1.2rem',lineHeight:1.8,fontWeight:500
-}}>
-  I’m a software engineer with <strong>3+ years of experience</strong> building intelligent systems and scalable full-stack applications. I focus on turning complex problems into clear, reliable solutions across <strong>AI pipelines, backend services,</strong> and <strong>cloud architecture</strong>.
-</p>
-
-<p style={{
-  color:TEXT_SUBTLE,fontSize:'clamp(0.95rem, 1.8vw, 1.05rem)',
-  marginBottom:'0',lineHeight:1.8,fontWeight:500
-}}>
-  I design reliable systems and create software that makes life simpler.
-</p>
+            <h3>About Me</h3>
+<div style={{maxWidth:'900px',margin:'0 auto'}}>
+  <p style={{
+    color:TEXT_SUBTLE,fontSize:'clamp(0.95rem, 1.8vw, 1.05rem)',
+    marginBottom:'1.2rem',lineHeight:1.8,fontWeight:500
+  }}>
+    I’m a software engineer with <strong>3+ years of experience</strong> building intelligent systems and scalable full-stack applications. I focus on turning complex problems into clear, reliable solutions across <strong>AI pipelines, backend services,</strong> and <strong>cloud architecture</strong>.
+  </p>
+  <p style={{
+    color:TEXT_SUBTLE,fontSize:'clamp(0.95rem, 1.8vw, 1.05rem)',
+    marginBottom:'0',lineHeight:1.8,fontWeight:500
+  }}>
+    I design reliable systems and create software that makes life simpler.
+  </p>
+</div>
 
             <h4 style={{
               textAlign:'center',
