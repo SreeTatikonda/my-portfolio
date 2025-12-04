@@ -120,7 +120,7 @@ const EXPERIENCE = [
     company:"Accenture",
     companyLogo: COMPANY_LOGOS['Accenture'],
     duration:"Oct 2022 – Dec 2023 | Bengaluru",
-    techStack: ["Java", "Spring Boot", "Spring MVC", "Hibernate ORM", "SQL Server", "Redis", "AWS Lambda", "AWS S3", "AWS EC2","AWS CloudWatch", "Docker","Jenkins","Spring Security","OAuth 2.0","JWT","IAM"],
+    techStack: ["Java","Spring Boot", "Spring MVC", "Hibernate ORM", "SQL Server", "Redis", "AWS Lambda", "AWS S3", "AWS EC2","AWS CloudWatch", "Docker","Jenkins","Spring Security","OAuth 2.0","JWT","IAM"],
     points:[
   "Developed Java microservices using Spring Boot, Hibernate ORM, and SQL Server processing 100,000+ daily transactions with 99.9% uptime",
   "Built RESTful APIs with Spring Boot and Spring MVC handling business logic and transaction management across distributed systems",
