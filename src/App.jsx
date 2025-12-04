@@ -1198,14 +1198,13 @@ const App = () => {
               color:TEXT_SUBTLE,fontSize:'clamp(0.95rem, 1.8vw, 1.05rem)',
               marginBottom:'1.2rem',lineHeight:1.8,fontWeight:500
             }}>
-              I'm a Computer Science professional specializing in building <strong>intelligent systems</strong> that solve real-world problems. I believe technology should empower and simplify human lives through thoughtful engineering.
-            </p>
+              I’m a software engineer with <strong>3+ years of experience</strong> building intelligent systems and scalable full-stack applications. I focus on turning complex problems into clear, reliable solutions across <strong>AI pipelines, backend services,</strong> and <strong>cloud architecture</strong>.
+  </p>
             <p style={{
               color:TEXT_SUBTLE,fontSize:'clamp(0.95rem, 1.8vw, 1.05rem)',
               marginBottom:'1.2rem',lineHeight:1.8,fontWeight:500
             }}>
-              With 3+ years of experience in <strong>AI, full-stack development, and cloud architecture</strong>, I turn complex ideas into scalable, production-ready solutions. I approach every challenge systematically, remain committed to quality, and deliver until solutions are live.
-            </p>
+              
             <p style={{
               color:TEXT_SUBTLE,fontSize:'clamp(0.95rem, 1.8vw, 1.05rem)',
               marginBottom:'0',lineHeight:1.8,fontWeight:500
