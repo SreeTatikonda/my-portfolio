@@ -159,18 +159,17 @@ const EDUCATION = {
     "Advanced Principles of System Architecture",
     "Computer Networks",
     "Deep Learning",
-    "Digital Signal Processing",
-    "Power Systems"
+    "Principles of System Design"
   ]
 };
 
 const CERTIFICATIONS = [
   {
-    title: "Microsoft Certified: Azure Fundamentals",
+    title: "Microsoft Certified: Azure Fundamentals(AZ-900)",
     issuer: "Microsoft"
   },
   {
-    title: "Microsoft Certified: Security, Compliance, and Identity Fundamentals",
+    title: "Microsoft Certified: Security, Compliance, and Identity Fundamentals(SC-900)",
     issuer: "Microsoft"
   }
 ];
