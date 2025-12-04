@@ -1198,19 +1198,22 @@ const App = () => {
               color:TEXT_SUBTLE,fontSize:'clamp(0.95rem, 1.8vw, 1.05rem)',
               marginBottom:'1.2rem',lineHeight:1.8,fontWeight:500
             }}>
-              I’m a software engineer with <strong>3+ years of experience</strong> building intelligent systems and scalable full-stack applications. I focus on turning complex problems into clear, reliable solutions across <strong>AI pipelines, backend services,</strong> and <strong>cloud architecture</strong>.
+    I’m a software engineer with <strong>3+ years of experience</strong> building intelligent systems and scalable full-stack applications. I focus on turning complex problems into clear, reliable solutions across <strong>AI pipelines, backend services,</strong> and <strong>cloud architecture</strong>.
   </p>
-            <p style={{
-              color:TEXT_SUBTLE,fontSize:'clamp(0.95rem, 1.8vw, 1.05rem)',
-              marginBottom:'1.2rem',lineHeight:1.8,fontWeight:500
-            }}>
-              
-            <p style={{
-              color:TEXT_SUBTLE,fontSize:'clamp(0.95rem, 1.8vw, 1.05rem)',
-              marginBottom:'0',lineHeight:1.8,fontWeight:500
-            }}>
-              I thrive on building <strong>human-centered, valuable solutions</strong> at the intersection of AI and engineering. Always excited to collaborate on meaningful projects.
-            </p>
+  
+  <p style={{
+    color:TEXT_SUBTLE,fontSize:'clamp(0.95rem, 1.8vw, 1.05rem)',
+    marginBottom:'1.2rem',lineHeight:1.8,fontWeight:500
+  }}>
+    My work centers on designing systems that are fast, dependable, and production-ready. I approach engineering with clarity and discipline, delivering robust solutions that perform in real-world environments.
+  </p>
+  
+  <p style={{
+    color:TEXT_SUBTLE,fontSize:'clamp(0.95rem, 1.8vw, 1.05rem)',
+    marginBottom:'0',lineHeight:1.8,fontWeight:500
+  }}>
+    I enjoy building software that is practical, impactful, and thoughtfully engineered—and I’m always excited to collaborate on meaningful, high-value projects.
+  </p>
 
             <h4 style={{
               textAlign:'center',
