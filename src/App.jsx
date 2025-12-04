@@ -70,11 +70,12 @@ const EXPERIENCE = [
     duration:"May 2025 – Present | Des Moines",
     techStack: ["Python", "FastAPI", "Flask", "Docker", "Kubernetes", "LLMs", "NLP"],
     points:[
-      "Designed and deployed an end-to-end Document AI platform using Python microservices (FastAPI, Flask), containerized with Docker and orchestrated on Kubernetes for scalable processing of 10K+ document streams.",
-      "Built a multimodal extraction pipeline combining OCR, Donut, and LayoutLM models, improving accuracy by 82% and reducing latency by 70% with performance optimized through Prometheus-based system health checks.",
-      "Integrated NLP and LLM modules within APIs to normalize and validate data, enhancing consistency and reliability.",
-      "Implemented monitoring pipelines to track uptime and performance metrics, ensuring stable production operations."
-    ]
+    "Built production ML pipeline using OCR, PyTorch, and NLP for automated document parsing with 97% field extraction accuracy",
+    "Implemented fine-tuning of LLMs (BERT, LayoutLM, Donut) using PyTorch and Hugging Face Transformers, achieving 83% extraction accuracy on multi-format documents",
+    "Developed FastAPI microservice with async processing and API authentication for enterprise system integration",
+    "Deployed containerized ML services on Kubernetes with autoscaling and load balancing for production workloads",
+    "Automated CI/CD pipeline with Docker containerization and testing workflows in Agile environment"
+]
   },
   {
     title:"Graduate Research Assistant",
@@ -83,12 +84,16 @@ const EXPERIENCE = [
     duration:"Nov 2024 – Present | Ames",
     techStack: ["Python", "LLMs", "Hugging Face", "ChromaDB", "React", "TypeScript", "SQL", "Git"],
     points:[
-      "Architected and deployed a Retrieval Augmented Generation (RAG) tutoring system using Llama 2 and Hugging Face on Kubernetes, maintaining 99.9% uptime and scalable AI delivery.",
-      "Built and optimized RAG pipelines with ChromaDB to ground responses in diverse data formats, supporting over 500 concurrent requests with consistent context accuracy.",
-      "Developed an accessible front end using React and TypeScript with WCAG 2.1 compliant components, enhancing accessibility and improving load time by 20%.",
-      "Executed evaluation pipelines achieving 85% answer accuracy and 100% contextual relevance.",
-      "Integrated an SQL-based tracking layer to enable reliable data storage, traceability, and analytical reporting."
-    ]
+  "Built AI tutoring application with multimodal RAG pipeline using CLIP embeddings, ChromaDB vector database, LangChain orchestration, and hybrid retrieval achieving 94% citation accuracy",
+  "Implemented query routing using LangChain with cosine similarity scoring and Tavily web search API fallback for out-of-domain questions beyond RAG corpus",
+  "Developed FastAPI backend with WebSocket streaming, async request handling, and Llama 3 (Ollama) prompt caching, reducing time-to-first-token by 60%",
+  "Designed dual-database architecture with PostgreSQL for chat history and course storage, and ChromaDB vector store for semantic search",
+  "Built real-time chat interface using React, TypeScript, and WebSocket with token streaming and async state management",
+  "Created instructor analytics dashboard using React, TypeScript, Recharts, and Node.js with charts for student engagement, question categories, and response accuracy",
+  "Fine-tuned Llama models using SambaNova and Hugging Face Transformers for structured extraction from XML to JSON with 95% accuracy",
+  "Developed Flask API with data preprocessing pipeline using Python, regex parsing, and full-text search for XML data processing"
+]
+
   },
   {
     title:"Software Developer in App Development",
@@ -97,12 +102,18 @@ const EXPERIENCE = [
     duration:"Feb 2024 – Sept 2025 | Ames",
     techStack: ["React", "TypeScript", ".NET Core", "SQL Server", "Azure DevOps", "CI/CD Pipelines"],
     points:[
-      "Designed and implemented the frontend in React and TypeScript, optimizing components and build settings to achieve 30% faster load times.",
-      "Built a robust client-side data layer with state-management logic to handle complex, real-time updates from .NET Core APIs.",
-      "Integrated the React frontend with .NET Core and SQL Server backends to provide secure user access and smooth, real-time interaction for more than 2K users.",
-      "Created CI/CD pipelines in Azure DevOps to automate build and release workflows, reducing deployment time and improving product reliability.",
-      "Implemented automated frontend testing with Jest and React Testing Library to ensure stable, high-quality feature delivery."
-    ]
+  "Built cross-platform recommendation app using React Native, JavaScript ES6+, and Redux with 95% feature parity",
+  "Integrated Android CameraX SDK with React Native for image capture and preprocessing, handling 1000+ daily requests",
+  "Developed RESTful API using Python Flask with JWT authentication for image upload and ML prediction endpoints",
+  "Implemented CNN model using TensorFlow and Keras for hand keypoint detection achieving 92% dimensional accuracy",
+  "Designed async processing pipeline using Celery and Redis message broker, reducing API response time by 60%",
+  "Built dual-database architecture with PostgreSQL for user data and MongoDB for image metadata, improving queries by 40%",
+  "Performed load testing on PostgreSQL using Python, SQLAlchemy, and pytest with 500+ concurrent transactions, validating query optimization and indexing performance",
+  "Optimized React Native using lazy loading, FlatList virtualization, and React.memo, reducing page load time by 30%",
+  "Conducted benchmark testing on 500+ hand samples comparing ML predictions to manual measurements, achieving 94% accuracy",
+  "Implemented error handling, input validation, and logging across full stack, reducing production errors by 60%"
+]
+
   },
   {
     title:"App Development Associate",
@@ -111,12 +122,17 @@ const EXPERIENCE = [
     duration:"Oct 2022 – Dec 2023 | Bengaluru",
     techStack: ["C#", ".NET Core", "SQL Server", "AWS", "Azure DevOps", "OAuth 2.0"],
     points:[
-      "Designed and optimized .NET Core REST APIs with distributed caching, achieving 2.4× higher throughput and lower latency.",
-      "Built a secure data layer integrating OAuth 2.0 authentication and encryption protocols to handle over 100K daily transactions.",
-      "Developed a scalable SQL Server backend with advanced query optimization and indexing for enterprise-grade performance.",
-      "Built CI/CD pipelines in Azure DevOps and deployed event-driven AWS Lambda services with 99.9% uptime.",
-      "Collaborated with global Agile teams on sprint planning, code reviews, and feature delivery to maintain engineering excellence."
-    ]
+  "Developed Java microservices using Spring Boot, Hibernate ORM, and SQL Server processing 100,000+ daily transactions with 99.9% uptime",
+  "Built RESTful APIs with Spring Boot and Spring MVC handling business logic and transaction management across distributed systems",
+  "Optimized REST APIs using Redis distributed caching and connection pooling, reducing response time by 58% and achieving 2.4× throughput",
+  "Designed database schemas with SQL Server using indexing strategies and Hibernate entity mapping, improving query performance by 65%",
+  "Designed ETL pipelines using AWS Lambda and S3 for real-time data processing, reducing manual intervention by 80% and improving accuracy by 60%",
+  "Implemented AWS infrastructure using EC2, Lambda, and CloudWatch for automated monitoring and performance optimization",
+  "Enhanced CI/CD pipelines with Docker and Jenkins using branching strategies and automated checks, boosting team velocity by 28%",
+  "Configured IAM security policies to comply with government regulations for 400+ B2B customers",
+  "Implemented authentication using Spring Security with OAuth 2.0 and JWT for REST APIs across microservices"
+]
+
   }
 ];
 
