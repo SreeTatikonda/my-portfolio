@@ -1277,113 +1277,144 @@ const App = () => {
               }}
               >
                 {/* Collapsed Header - Always Visible */}
-                <div 
-                  onClick={()=>setExpandedExperience(expandedExperience === i ? null : i)}
-                  style={{
-                    display:'flex',
-                    alignItems:'center',
-                    justifyContent:'space-between',
-                    cursor:'pointer',
-                    padding:'0.5rem 0'
-                  }}>
-                  <div style={{flex:1}}>
-                    {/* Title and Company Row */}
-                    <div style={{
-                      display:'flex',
-                      alignItems:'center',
-                      gap:'0.8rem',
-                      marginBottom:'0.5rem'
-                    }}>
-                      <h4 style={{
-                        fontWeight:800,
-                        fontSize:'clamp(1rem, 2vw, 1.2rem)',
-                        color:TEXT_DARK,
-                        margin:0
-                      }}>
-                        {job.title}
-                      </h4>
-                    </div>
+<div 
+  onClick={()=>setExpandedExperience(expandedExperience === i ? null : i)}
+  style={{
+    display:'flex',
+    alignItems:'center',
+    justifyContent:'space-between',
+    cursor:'pointer',
+    padding:'0.5rem 0'
+  }}>
+  <div style={{flex:1}}>
+    {/* Title and Company Row */}
+    <div style={{
+      display:'flex',
+      alignItems:'center',
+      gap:'0.8rem',
+      marginBottom:'0.5rem'
+    }}>
+      <h4 style={{
+        fontWeight:800,
+        fontSize:'clamp(1rem, 2vw, 1.2rem)',
+        color:TEXT_DARK,
+        margin:0
+      }}>
+        {job.title}
+      </h4>
+    </div>
 
-                    {/* Company, Duration, Location in one line */}
-                    <div style={{
-                      display:'flex',
-                      alignItems:'center',
-                      gap:'0.6rem',
-                      flexWrap:'wrap',
-                      fontSize:'clamp(0.85rem, 1.6vw, 0.95rem)',
-                      color:TEXT_SUBTLE,
-                      fontWeight:600
-                    }}>
-                      <span style={{color:ACCENT_COLOR,fontWeight:700}}>{job.company}</span>
-                      <span>•</span>
-                      <span>{job.duration.split('|')[0].trim()}</span>
-                      <span>•</span>
-                      <span style={{display:'flex',alignItems:'center',gap:'0.3rem'}}>
+    {/* Company, Duration, Location in one line */}
+    <div style={{
+      display:'flex',
+      alignItems:'center',
+      gap:'0.6rem',
+      flexWrap:'wrap',
+      fontSize:'clamp(0.85rem, 1.6vw, 0.95rem)',
+      color:TEXT_SUBTLE,
+      fontWeight:600
+    }}>
+      <span style={{color:ACCENT_COLOR,fontWeight:700}}>{job.company}</span>
+      <span>•</span>
+      <span>{job.duration.split('|')[0].trim()}</span>
+      <span>•</span>
+      <span style={{display:'flex',alignItems:'center',gap:'0.3rem'}}>
+        <span style={{display:'inline-flex',alignItems:'center',gap:'6px',color:ACCENT_COLOR}}>
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true" style={{verticalAlign:'middle'}}>
+            <path d="M21 10c0 6-9 12-9 12S3 16 3 10a9 9 0 1 1 18 0z"/>
+            <circle cx="12" cy="10" r="3"/>
+          </svg>
+          {job.duration.split('|')[1]?.trim() || 'Remote'}
+        </span>
+      </span>
+      {job.duration.includes('Present') && (
+        <span style={{
+          background:ACCENT_COLOR,
+          color:'white',
+          padding:'0.2rem 0.6rem',
+          borderRadius:'20px',
+          fontSize:'0.75rem',
+          fontWeight:700
+        }}>
+          Current
+        </span>
+      )}
+    </div>
 
-                        
-                      <span style={{display:'inline-flex',alignItems:'center',gap:'6px',color:ACCENT_COLOR}}><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true" style={{verticalAlign:'middle'}}><path d="M21 10c0 6-9 12-9 12S3 16 3 10a9 9 0 1 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>{job.duration.split('|')[1]?.trim() || 'Remote'}</span>
+    {/* 🔹 Tech stack shown only when collapsed */}
+    {expandedExperience !== i && job.techStack && job.techStack.length > 0 && (
+      <div
+        style={{
+          marginTop:'0.4rem',
+          display:'flex',
+          flexWrap:'wrap',
+          gap:'0.35rem',
+          fontSize:'clamp(0.8rem, 1.4vw, 0.9rem)',
+          fontWeight:600
+        }}
+      >
+        {job.techStack.map((tech, idx) => (
+          <span
+            key={idx}
+            style={{
+              padding:'0.15rem 0.6rem',
+              borderRadius:'999px',
+              background:`${ACCENT_COLOR}10`,
+              color:ACCENT_COLOR
+            }}
+          >
+            {tech}
+          </span>
+        ))}
+      </div>
+    )}
+  </div>
 
-                      </span>
-                      {job.duration.includes('Present') && (
-                        <span style={{
-                          background:ACCENT_COLOR,
-                          color:'white',
-                          padding:'0.2rem 0.6rem',
-                          borderRadius:'20px',
-                          fontSize:'0.75rem',
-                          fontWeight:700
-                        }}>
-                          Current
-                          
-                        </span>
-                        
-                      )}
-                    </div>
-                  </div>
+  {/* Expand/Collapse Arrow */}
+  <div style={{
+    display:'flex',
+    alignItems:'center',
+    justifyContent:'center',
+    width:'32px',
+    height:'32px',
+    borderRadius:'50%',
+    background:`${ACCENT_COLOR}10`,
+    transition:'all 0.3s ease',
+    transform:expandedExperience === i ? 'rotate(180deg)' : 'rotate(0deg)',
+    marginLeft:'1rem',
+    flexShrink:0
+  }}>
+    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke={ACCENT_COLOR} strokeWidth="2.5">
+      <polyline points="6 9 12 15 18 9"/>
+    </svg>
+  </div>
+</div>
 
-                  {/* Expand/Collapse Arrow */}
-                  <div style={{
-                    display:'flex',
-                    alignItems:'center',
-                    justifyContent:'center',
-                    width:'32px',
-                    height:'32px',
-                    borderRadius:'50%',
-                    background:`${ACCENT_COLOR}10`,
-                    transition:'all 0.3s ease',
-                    transform:expandedExperience === i ? 'rotate(180deg)' : 'rotate(0deg)',
-                    marginLeft:'1rem',
-                    flexShrink:0
-                  }}>
-                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke={ACCENT_COLOR} strokeWidth="2.5">
-                      <polyline points="6 9 12 15 18 9"/>
-                    </svg>
-                  </div>
-                </div>
+{/* Expanded Content - Bullet Points */}
+{expandedExperience === i && (
+  <div style={{
+    marginTop:'1rem',
+    paddingTop:'1rem',
+    borderTop:`2px solid ${ACCENT_COLOR}20`,
+    animation:'slideDown 0.3s ease',
+    maxHeight:'800px',
+    overflow:'hidden'
+  }}>
+    <ul style={{
+      marginLeft:'1rem',
+      color:TEXT_SUBTLE,
+      lineHeight:1.8,
+      fontSize:'clamp(0.85rem, 1.8vw, 0.95rem)',
+      marginTop:'0.8rem',
+      margin:0
+    }}>
+      {job.points.map((p,j)=>(
+        <li key={j} style={{marginBottom:'0.7rem'}} dangerouslySetInnerHTML={{__html: p}}/>
+      ))}
+    </ul>
+  </div>
+)}
 
-                {/* Expanded Content - Bullet Points */}
-                {expandedExperience === i && (
-                  <div style={{
-                    marginTop:'1rem',
-                    paddingTop:'1rem',
-                    borderTop:`2px solid ${ACCENT_COLOR}20`,
-                    animation:'slideDown 0.3s ease',
-                    maxHeight:'800px',
-                    overflow:'hidden'
-                  }}>
-                    <ul style={{
-                      marginLeft:'1rem',
-                      color:TEXT_SUBTLE,
-                      lineHeight:1.8,
-                      fontSize:'clamp(0.85rem, 1.8vw, 0.95rem)',
-                      marginTop:'0.8rem',
-                      margin:0
-                    }}>
-                      {job.points.map((p,j)=>(
-                        <li key={j} style={{marginBottom:'0.7rem'}} dangerouslySetInnerHTML={{__html: p}}/>
-                      ))}
-                    </ul>
-                  </div>
                 )}
               </div>
             ))}
