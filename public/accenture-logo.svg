@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="240" height="120" viewBox="0 0 240 120" role="img" aria-labelledby="title desc">
+  <title id="title">Accenture logo</title>
+  <desc id="desc">Simplified Accenture mark with accent arrow</desc>
+  <rect x="8" y="12" width="224" height="96" rx="16" fill="#1b1b1b"/>
+  <path d="M118 36l34 24-34 24v-12l18-12-18-12z" fill="#F6A25A"/>
+  <text x="40" y="74" font-family="'Inter','Segoe UI',sans-serif" font-size="40" font-weight="800" fill="#f7f7f7">accenture</text>
+</svg>

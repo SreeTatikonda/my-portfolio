@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="260" height="120" viewBox="0 0 260 120" role="img" aria-labelledby="title desc">
+  <title id="title">CDS Global logo</title>
+  <desc id="desc">Stylized CDS Global logotype with accent underline</desc>
+  <defs>
+    <linearGradient id="accent" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#F6A25A"/>
+      <stop offset="100%" stop-color="#FF8C42"/>
+    </linearGradient>
+  </defs>
+  <rect x="8" y="12" width="244" height="96" rx="18" fill="#fffaf6" stroke="#F6A25A" stroke-width="4" opacity="0.6"/>
+  <text x="32" y="68" font-family="'Inter', 'Segoe UI', sans-serif" font-size="38" font-weight="800" fill="#2E2E2E">CDS</text>
+  <text x="134" y="68" font-family="'Inter', 'Segoe UI', sans-serif" font-size="30" font-weight="700" fill="#6B6B6B">Global</text>
+  <rect x="32" y="78" width="180" height="6" rx="3" fill="url(#accent)"/>
+</svg>

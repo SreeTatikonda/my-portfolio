@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="360" viewBox="0 0 640 360" role="img" aria-labelledby="title desc">
+  <title id="title">Chest X-ray scan illustration</title>
+  <desc id="desc">Stylized medical scan showing lungs with accent highlights</desc>
+  <defs>
+    <linearGradient id="scan" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0f172a"/>
+      <stop offset="100%" stop-color="#1f2937"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="50%" cy="50%" r="60%">
+      <stop offset="0%" stop-color="#F6A25A" stop-opacity="0.4"/>
+      <stop offset="100%" stop-color="#F6A25A" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <rect width="640" height="360" rx="18" fill="#0b1221"/>
+  <rect x="12" y="12" width="616" height="336" rx="16" fill="url(#scan)" stroke="#F6A25A" stroke-width="4" opacity="0.7"/>
+  <circle cx="320" cy="180" r="120" fill="url(#glow)"/>
+  <g transform="translate(220 90)" fill="none" stroke="#d1e4ff" stroke-width="6" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M100 18c-30 8-52 46-52 88v70c0 12-10 22-22 22H0" opacity="0.9"/>
+    <path d="M100 18c30 8 52 46 52 88v70c0 12 10 22 22 22h26" opacity="0.9"/>
+    <path d="M100 6v248" stroke="#F6A25A" stroke-dasharray="12 10"/>
+    <path d="M76 70c12 20 24 34 24 78" opacity="0.8"/>
+    <path d="M124 70c-12 20-24 34-24 78" opacity="0.8"/>
+  </g>
+  <rect x="60" y="36" width="520" height="32" rx="10" fill="#0b1221" opacity="0.65"/>
+  <text x="80" y="58" font-family="'Inter','Segoe UI',sans-serif" font-size="18" font-weight="700" fill="#F6A25A">Chest X-Ray Scan Analysis</text>
+</svg>
