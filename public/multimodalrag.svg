@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="360" viewBox="0 0 640 360" role="img" aria-labelledby="title desc">
+  <title id="title">Multi-modal RAG system illustration</title>
+  <desc id="desc">Abstract depiction of text and image retrieval nodes connected to a central model</desc>
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0b132b"/>
+      <stop offset="100%" stop-color="#1c2541"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#F6A25A"/>
+      <stop offset="100%" stop-color="#FF8C42"/>
+    </linearGradient>
+  </defs>
+  <rect width="640" height="360" rx="18" fill="url(#bg)"/>
+  <rect x="18" y="18" width="604" height="324" rx="16" fill="none" stroke="#F6A25A" stroke-width="3" opacity="0.65"/>
+  <g fill="#0e172a" stroke="#F6A25A" stroke-width="3" opacity="0.9">
+    <rect x="80" y="70" width="170" height="90" rx="12"/>
+    <rect x="390" y="70" width="170" height="90" rx="12"/>
+    <rect x="80" y="200" width="170" height="90" rx="12"/>
+    <rect x="390" y="200" width="170" height="90" rx="12"/>
+  </g>
+  <g fill="#f3f5ff" font-family="'Inter','Segoe UI',sans-serif" font-size="16" font-weight="700">
+    <text x="165" y="120" text-anchor="middle">Text Corpus</text>
+    <text x="475" y="120" text-anchor="middle">Vision Store</text>
+    <text x="165" y="250" text-anchor="middle">Hybrid Search</text>
+    <text x="475" y="250" text-anchor="middle">Grounded Output</text>
+  </g>
+  <circle cx="320" cy="178" r="56" fill="#0e172a" stroke="url(#accent)" stroke-width="8"/>
+  <text x="320" y="186" text-anchor="middle" font-family="'Inter','Segoe UI',sans-serif" font-size="20" font-weight="800" fill="#F6A25A">LLM</text>
+  <g stroke="#F6A25A" stroke-width="3" stroke-linecap="round" fill="none" opacity="0.85">
+    <path d="M250 115h50"/><path d="M250 234h50"/><path d="M340 115h50"/><path d="M340 234h50"/>
+    <path d="M320 178v-46"/><path d="M320 178v46"/>
+    <path d="M136 160l34 44"/><path d="M506 160l-34 44"/>
+  </g>
+  <rect x="230" y="300" width="180" height="32" rx="10" fill="#0b132b" stroke="#F6A25A" stroke-width="2" opacity="0.6"/>
+  <text x="320" y="322" text-anchor="middle" font-family="'Inter','Segoe UI',sans-serif" font-size="15" font-weight="700" fill="#f7f7f7">Multi-Modal Retrieval Augmented Generation</text>
+</svg>

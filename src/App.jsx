@@ -8,12 +8,12 @@ const TEXT_SUBTLE = '#6B6B6B';
 const NAV_HEIGHT = '60px';
 const GRADIENT_ACCENT = 'linear-gradient(135deg, #F6A25A 0%, #FF8C42 100%)';
 
-const PHOTO_URL = '/profile.png';
+const PHOTO_URL = '/profile.svg';
 
 const COMPANY_LOGOS = {
-  'CDS Global': '/cds-global-logo.png',
-  'Iowa State University': '/iowa-state-logo.png',
-  'Accenture': '/accenture-logo.png'
+  'CDS Global': '/cds-global-logo.svg',
+  'Iowa State University': '/iowa-state-logo.svg',
+  'Accenture': '/accenture-logo.svg'
 };
 
 /* TECH STACK ICONS - MAPPING WITH BRAND LOGOS FROM CDN */
@@ -181,7 +181,7 @@ const PROJECTS = [
     techs: ["Python", "PyTorch", "Computer Vision"],
     description:"Deep learning system for pneumonia detection from chest X-rays. Trained CNN model achieving 94% accuracy on medical imaging dataset. Implemented data preprocessing, model optimization, and evaluation pipelines for healthcare diagnostic support.",
     highlights:["94% Accuracy","Medical AI","Deep Learning"],
-    image: "/chestxrayscan.png",
+    image: "/chestxrayscan.svg",
     github:"https://github.com/SreeTatikonda/ChestXray-Scan"
   },
   {
@@ -190,7 +190,7 @@ const PROJECTS = [
     techs: ["Python", "LLMs", "Computer Vision", "RAG", "Embeddings"],
     description: "Developed a Multi-Modal Retrieval-Augmented Generation system capable of understanding and integrating information from both images and text documents. Implemented unified embedding pipelines, vector search, multimodal retrieval, and grounded LLM reasoning for accurate, context-aware responses.",
     highlights: ["Multi-Modal Retrieval", "LLM Reasoning", "Unified Embeddings"],
-    image: "/multimodalrag.png",
+    image: "/multimodalrag.svg",
     github: "https://github.com/SreeTatikonda/RAG_projects"
   },
   {
@@ -199,7 +199,7 @@ const PROJECTS = [
     techs: ["Python", "NLP", "PyTorch"],
     description:"NLP-based emotion classifier using transformer models (distilBERT). Achieves 92% accuracy on emotion classification with real-time inference. Features interactive UI with confidence scores and emotion distribution visualization for text analysis.",
     highlights:["92% Accuracy","Real-time NLP","Interactive UI"],
-    image: "/emotionai.png",
+    image: "/emotionai.svg",
     github:"https://github.com/SreeTatikonda/Emotion-Detection-from-Text"
   },
   {
@@ -208,7 +208,7 @@ const PROJECTS = [
     techs: ["Python", "NLP", "React"],
     description:"AI-powered tool that compares resumes against job descriptions using NLP similarity matching. Provides actionable recommendations for resume optimization. Helps job seekers identify skill gaps and improve match scores with target positions.",
     highlights:["NLP Processing","AI Matching","Career Tech"],
-    image: "/airesumeanalyser.png",
+    image: "/airesumeanalyser.svg",
     github:"https://github.com/SreeTatikonda/AI-Resume_Analyser"
   },
   {
@@ -217,7 +217,7 @@ const PROJECTS = [
     techs: ["Python", "C#", "Java"],
     description:"Complete C compiler implementation from scratch with lexical analysis, parsing, semantic analysis, and code generation. Handles complex language constructs with proper error handling and optimization for executable code generation.",
     highlights:["System Programming","Language Design","Code Generation"],
-    image: "compiler.png",
+    image: "/compiler.svg",
     github:"https://github.com/SreeTatikonda/Compiler---C-Compiler"
   },
   {
@@ -226,7 +226,7 @@ const PROJECTS = [
     techs: ["Python", "Security", "Quantum"],
     description:"Quantum key distribution (QKD) system for secure encryption and decryption. Explores quantum computing applications in cybersecurity. Implements cryptographic protocols leveraging quantum mechanics for theoretically unbreakable encryption.",
     highlights:["Quantum Security","Cryptography","Research"],
-    image: "/qkdencryption.png",
+    image: "/qkdencryption.svg",
     github:"https://github.com/SreeTatikonda/Encryption-and-Decryption-using-QKD"
   }
 ];
@@ -236,7 +236,7 @@ const TESTIMONIALS = [
     name:"Tammy Griggs",
     role:"IT Developer and Manager, CDS Global",
     text:"It's been a real pleasure having Yasaswini on our development team. From day one, she brought a rare combination of curiosity, technical depth, and genuine enthusiasm. She's playing a key role in integrating AI into our systems, turning complex ideas into practical solutions.",
-    photo:"/tammy.png"
+    photo:"/tammy.svg"
   },
   {
     name:"Dr. Sarah Mitchell",
@@ -664,6 +664,10 @@ const TestimonialCarousel = () => {
             <img 
               src={TESTIMONIALS[current].photo} 
               alt={TESTIMONIALS[current].name} 
+              srcSet={`${TESTIMONIALS[current].photo} 1x, ${TESTIMONIALS[current].photo} 2x`}
+              loading="lazy"
+              width={60}
+              height={60}
               style={{
                 width:'60px',
                 height:'60px',
@@ -1057,9 +1061,12 @@ const App = () => {
           zIndex:-1
         }}/>
         {/* The img tag for the photo */}
-        <img 
-          src={PHOTO_URL} 
-          alt="Yasaswini Tatikonda" 
+        <img
+          src={PHOTO_URL}
+          srcSet={`${PHOTO_URL} 1x, ${PHOTO_URL} 2x`}
+          alt="Yasaswini Tatikonda"
+          width={140}
+          height={140}
           style={{
             width:'140px',
             height:'140px',
@@ -1461,7 +1468,12 @@ const App = () => {
                   <img 
                     src={proj.image} 
                     alt={proj.title}
+                    srcSet={`${proj.image} 1x, ${proj.image} 2x`}
+                    loading="lazy"
+                    width={640}
+                    height={360}
                     className="project-image"
+                    style={{width:'100%',height:'100%',objectFit:'cover'}}
                   />
                   <div style={{
                     position:'absolute',
@@ -1594,7 +1606,15 @@ const App = () => {
                       overflow:'hidden'
                     }}>
                       {EDUCATION.masters.logo ? (
-                        <img src = "/iowa-state-logo.png" alt="Iowa State University" style={{width:'100%',height:'100%',objectFit:'contain'}} />
+                        <img
+                          src="/iowa-state-logo.svg"
+                          srcSet="/iowa-state-logo.svg 1x, /iowa-state-logo.svg 2x"
+                          alt="Iowa State University"
+                          loading="lazy"
+                          width={40}
+                          height={40}
+                          style={{width:'100%',height:'100%',objectFit:'contain'}}
+                        />
                       ) : (
                         <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
                           <path d="M22 10v6m0 0l-8.5 4.75a2 2 0 01-1.999 0L2 16m20-6l-10-5.5a2 2 0 00-2 0l-10 5.5m20 0v-6a2 2 0 00-1-1.73l-9-5.19a2 2 0 00-2 0l-9 5.19a2 2 0 00-1 1.73v6"/>
@@ -1671,7 +1691,15 @@ const App = () => {
                       overflow:'hidden'
                     }}>
                       {EDUCATION.bachelors.logo ? (
-                        <img src="/gmr_logo.png" alt="GMR Institute of Technology" style={{width:'100%',height:'100%',objectFit:'contain'}} />
+                        <img
+                          src="/gmrit.svg"
+                          srcSet="/gmrit.svg 1x, /gmrit.svg 2x"
+                          alt="GMR Institute of Technology"
+                          loading="lazy"
+                          width={40}
+                          height={40}
+                          style={{width:'100%',height:'100%',objectFit:'contain'}}
+                        />
                       ) : (
                         <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
                           <path d="M22 10v6m0 0l-8.5 4.75a2 2 0 01-1.999 0L2 16m20-6l-10-5.5a2 2 0 00-2 0l-10 5.5m20 0v-6a2 2 0 00-1-1.73l-9-5.19a2 2 0 00-2 0l-9 5.19a2 2 0 00-1 1.73v6"/>

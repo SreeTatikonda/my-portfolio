@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="120" height="120" viewBox="0 0 120 120" role="img" aria-labelledby="title desc">
+  <title id="title">Testimonial portrait placeholder</title>
+  <desc id="desc">Circular avatar with initials TG</desc>
+  <defs>
+    <linearGradient id="avatar" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#F6A25A"/>
+      <stop offset="100%" stop-color="#FF8C42"/>
+    </linearGradient>
+  </defs>
+  <circle cx="60" cy="60" r="58" fill="#fff4ec" stroke="#F6A25A" stroke-width="4" opacity="0.8"/>
+  <circle cx="60" cy="60" r="44" fill="url(#avatar)"/>
+  <text x="60" y="76" text-anchor="middle" font-family="'Inter','Segoe UI',sans-serif" font-size="34" font-weight="800" fill="#2E2E2E">TG</text>
+</svg>

@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="360" viewBox="0 0 640 360" role="img" aria-labelledby="title desc">
+  <title id="title">Quantum key distribution illustration</title>
+  <desc id="desc">Quantum nodes exchanging keys with entangled photons</desc>
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0a0f1f"/>
+      <stop offset="100%" stop-color="#131c2e"/>
+    </linearGradient>
+    <linearGradient id="beam" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#F6A25A"/>
+      <stop offset="100%" stop-color="#FF8C42"/>
+    </linearGradient>
+  </defs>
+  <rect width="640" height="360" rx="18" fill="url(#bg)"/>
+  <rect x="18" y="18" width="604" height="324" rx="16" fill="none" stroke="#F6A25A" stroke-width="3" opacity="0.65"/>
+  <g transform="translate(80 120)" fill="#0f172a" stroke="#3b82f6" stroke-width="3">
+    <rect width="120" height="90" rx="14"/>
+    <rect x="360" width="120" height="90" rx="14"/>
+  </g>
+  <text x="140" y="170" text-anchor="middle" font-family="'Inter','Segoe UI',sans-serif" font-size="16" font-weight="700" fill="#e5e7eb">Sender</text>
+  <text x="500" y="170" text-anchor="middle" font-family="'Inter','Segoe UI',sans-serif" font-size="16" font-weight="700" fill="#e5e7eb">Receiver</text>
+  <path d="M200 165c60-40 180-40 240 0" fill="none" stroke="url(#beam)" stroke-width="6" stroke-linecap="round" stroke-dasharray="10 8"/>
+  <circle cx="320" cy="140" r="12" fill="#F6A25A"/><circle cx="320" cy="190" r="10" fill="#FF8C42"/>
+  <g fill="#e5e7eb" font-family="'Inter','Segoe UI',sans-serif" font-size="13" opacity="0.9">
+    <text x="120" y="230">Quantum channel</text>
+    <text x="120" y="250">Photon pair exchange</text>
+    <text x="430" y="230">Key reconciliation</text>
+    <text x="430" y="250">Secure encryption</text>
+  </g>
+  <rect x="160" y="290" width="320" height="32" rx="10" fill="#0b1221" stroke="#F6A25A" stroke-width="2" opacity="0.6"/>
+  <text x="320" y="312" text-anchor="middle" font-family="'Inter','Segoe UI',sans-serif" font-size="15" font-weight="700" fill="#f7f7f7">Quantum Key Distribution • Security • Research</text>
+</svg>
