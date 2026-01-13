@@ -990,21 +990,51 @@ const App = () => {
               <p style={{
                 fontSize:'clamp(1rem, 2.3vw, 1.2rem)',
                 color:ACCENT_COLOR,
-                marginBottom:'0.5rem',
+                marginBottom:'1rem',
                 lineHeight:1.7,
                 fontWeight:700
               }}>
-                Full-Stack Engineer | AI/ML Specialist
+                Software Engineer
               </p>
               <p style={{
                 fontSize:'clamp(0.95rem, 2.2vw, 1.1rem)',
+                color:TEXT_DARK,
+                marginBottom:'1.5rem',
+                lineHeight:1.7,
+                fontWeight:600
+              }}>
+                I build systems that eliminate repetitive work.
+              </p>
+              <p style={{
+                fontSize:'clamp(0.85rem, 2vw, 0.95rem)',
+                color:TEXT_SUBTLE,
+                marginBottom:'0.3rem',
+                lineHeight:1.8,
+                fontWeight:500
+              }}>
+                Highlight of my impact:
+              </p>
+              <ul style={{
+                fontSize:'clamp(0.85rem, 2vw, 0.95rem)',
+                color:TEXT_SUBTLE,
+                marginBottom:'1.5rem',
+                lineHeight:1.8,
+                fontWeight:500,
+                listStyle:'none',
+                paddingLeft:0
+              }}>
+                <li style={{marginBottom:'0.5rem'}}>• Automated workflows saving 40 hours/week of manual effort</li>
+                <li style={{marginBottom:'0.5rem'}}>• Built systems processing 100K+ transactions daily</li>
+                <li style={{marginBottom:'0.5rem'}}>• Optimized performance by 60% for enterprise-scale applications</li>
+              </ul>
+              <p style={{
+                fontSize:'clamp(0.85rem, 2vw, 0.95rem)',
                 color:TEXT_SUBTLE,
                 marginBottom:'1.5rem',
                 lineHeight:1.7,
                 fontWeight:500
               }}>
-                MS in CS @ Iowa State | 3+ years in production ML & full-stack engineering<br/>
-                Building RAG pipelines, microservices, and intelligent systems at scale.
+                MS in Computer Science @ Iowa State (Dec 2025)
               </p>
               <div style={{display:'flex',gap:'1rem',flexWrap:'wrap'}}>
                 <button onClick={()=>scrollTo('projects')}
