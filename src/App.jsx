@@ -11,9 +11,9 @@ const GRADIENT_ACCENT = 'linear-gradient(135deg, #F6A25A 0%, #FF8C42 100%)';
 const PHOTO_URL = '/profile.png';
 
 const COMPANY_LOGOS = {
-  'CDS Global': '/cds-global-logo.svg',
-  'Iowa State University': '/iowa-state-logo.svg',
-  'Accenture': '/accenture-logo.svg'
+  'CDS Global': '/cds-global-logo.png',
+  'Iowa State University': '/iowa-state-logo.png',
+  'Accenture': '/accenture-logo.png'
 };
 
 /* TECH STACK ICONS - MAPPING WITH BRAND LOGOS FROM CDN */
@@ -81,7 +81,7 @@ const EXPERIENCE = [
     title:"Graduate Research Assistant",
     company:"Iowa State University",
     companyLogo: COMPANY_LOGOS['Iowa State University'],
-    duration:"Nov 2024 – Present | Ames",
+    duration:"Nov 2024 – Dec 2025 | Ames",
     techStack: ["Python", "LLMs", "Hugging Face", "ChromaDB", "React", "TypeScript", "SQL", "Git"],
     points:[
   "Built AI tutoring application with multimodal RAG pipeline using CLIP embeddings, ChromaDB vector database, LangChain orchestration, and hybrid retrieval achieving 94% citation accuracy",
@@ -181,7 +181,7 @@ const PROJECTS = [
     techs: ["Python", "PyTorch", "Computer Vision"],
     description:"Deep learning system for pneumonia detection from chest X-rays. Trained CNN model achieving 94% accuracy on medical imaging dataset. Implemented data preprocessing, model optimization, and evaluation pipelines for healthcare diagnostic support.",
     highlights:["94% Accuracy","Medical AI","Deep Learning"],
-    image: "/chestxrayscan.svg",
+    image: "/chestxrayscan.png",
     github:"https://github.com/SreeTatikonda/ChestXray-Scan"
   },
   {
@@ -190,7 +190,7 @@ const PROJECTS = [
     techs: ["Python", "LLMs", "Computer Vision", "RAG", "Embeddings"],
     description: "Developed a Multi-Modal Retrieval-Augmented Generation system capable of understanding and integrating information from both images and text documents. Implemented unified embedding pipelines, vector search, multimodal retrieval, and grounded LLM reasoning for accurate, context-aware responses.",
     highlights: ["Multi-Modal Retrieval", "LLM Reasoning", "Unified Embeddings"],
-    image: "/multimodalrag.svg",
+    image: "/multimodalrag.png",
     github: "https://github.com/SreeTatikonda/RAG_projects"
   },
   {
@@ -199,7 +199,7 @@ const PROJECTS = [
     techs: ["Python", "NLP", "PyTorch"],
     description:"NLP-based emotion classifier using transformer models (distilBERT). Achieves 92% accuracy on emotion classification with real-time inference. Features interactive UI with confidence scores and emotion distribution visualization for text analysis.",
     highlights:["92% Accuracy","Real-time NLP","Interactive UI"],
-    image: "/emotionai.svg",
+    image: "/emotionai.png",
     github:"https://github.com/SreeTatikonda/Emotion-Detection-from-Text"
   },
   {
@@ -208,7 +208,7 @@ const PROJECTS = [
     techs: ["Python", "NLP", "React"],
     description:"AI-powered tool that compares resumes against job descriptions using NLP similarity matching. Provides actionable recommendations for resume optimization. Helps job seekers identify skill gaps and improve match scores with target positions.",
     highlights:["NLP Processing","AI Matching","Career Tech"],
-    image: "/airesumeanalyser.svg",
+    image: "/airesumeanalyser.png",
     github:"https://github.com/SreeTatikonda/AI-Resume_Analyser"
   },
   {
@@ -217,7 +217,7 @@ const PROJECTS = [
     techs: ["Python", "C#", "Java"],
     description:"Complete C compiler implementation from scratch with lexical analysis, parsing, semantic analysis, and code generation. Handles complex language constructs with proper error handling and optimization for executable code generation.",
     highlights:["System Programming","Language Design","Code Generation"],
-    image: "/compiler.svg",
+    image: "/compiler.png",
     github:"https://github.com/SreeTatikonda/Compiler---C-Compiler"
   },
   {
@@ -226,7 +226,7 @@ const PROJECTS = [
     techs: ["Python", "Security", "Quantum"],
     description:"Quantum key distribution (QKD) system for secure encryption and decryption. Explores quantum computing applications in cybersecurity. Implements cryptographic protocols leveraging quantum mechanics for theoretically unbreakable encryption.",
     highlights:["Quantum Security","Cryptography","Research"],
-    image: "/qkdencryption.svg",
+    image: "/qkdencryption.png",
     github:"https://github.com/SreeTatikonda/Encryption-and-Decryption-using-QKD"
   }
 ];
@@ -236,13 +236,13 @@ const TESTIMONIALS = [
     name:"Tammy Griggs",
     role:"IT Developer and Manager, CDS Global",
     text:"It's been a real pleasure having Yasaswini on our development team. From day one, she brought a rare combination of curiosity, technical depth, and genuine enthusiasm. She's playing a key role in integrating AI into our systems, turning complex ideas into practical solutions.",
-    photo:"/tammy.svg"
+    photo:"/tammy.png"
   },
   {
     name:"Dr. Sarah Mitchell",
     role:"Research Supervisor, Iowa State University",
-    text:"Yasaswini's work on the RAG tutoring system exceeded expectations. Her technical depth and attention to accessibility standards set a new benchmark for our projects.",
-    photo:"https://placehold.co/60x60/F6A25A/FFF?text=SM"
+    text:"Yasaswini played a key role in the success of the project, and I would confidently recommend her for work involving applied AI, RAG systems, and production-ready LLM applications. She was also a great collaborator throughout the project. Communication was clear, code reviews were thoughtful, and she was always willing to dig into complex problems with the rest of the team. Her attention to detail helped us ship a more stable and polished product.",
+    photo:"/kojo.png"
   },
   {
     name:"Priya Sharma",
