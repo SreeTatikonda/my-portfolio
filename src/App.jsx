@@ -245,10 +245,10 @@ const TESTIMONIALS = [
     photo:"/kojo.png"
   },
   {
-    name:"Priya Sharma",
-    role:"Tech Lead, Accenture",
-    text:"Working with Yasaswini was a pleasure. She consistently delivered optimized, scalable solutions and her knowledge of modern DevOps practices is exceptional.",
-    photo:"https://placehold.co/60x60/F6A25A/FFF?text=PS"
+    name:"Abirami Sowrirajan",
+    role:"Scrum Master, Accenture",
+    text:"Yasaswini consistently delivered her tasks on time and exceeded expectations with her problem-solving mindset. She approached challenges methodically and delivered quality results that moved our projects forward.",
+    photo:"/abirami.png"
   }
 ];
 
@@ -1216,7 +1216,64 @@ const App = () => {
           </svg>
         </a>
     </div>
+        {/* Medium Icon */}
+        <a href="https://medium.com/@yasaswinitatikonda1" target="_blank" rel="noopener noreferrer"
+           style={{
+             display:'flex',
+             alignItems:'center',
+             justifyContent:'center',
+             width:'38px',
+             height:'38px',
+             borderRadius:'50%',
+             background:ACCENT_COLOR,
+             color:'white',
+             textDecoration:'none',
+             transition:'all 0.3s cubic-bezier(0.34, 1.56, 0.64, 1)',
+             boxShadow:`0 4px 15px ${ACCENT_COLOR}40`
+           }}
+           onMouseEnter={(e) => {
+             e.currentTarget.style.transform = 'scale(1.25)';
+             e.currentTarget.style.boxShadow = `0 8px 25px ${ACCENT_COLOR}60`;
+           }}
+           onMouseLeave={(e) => {
+             e.currentTarget.style.transform = 'scale(1)';
+             e.currentTarget.style.boxShadow = `0 4px 15px ${ACCENT_COLOR}40`;
+           }}
+           title="Medium Blog">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+            <path d="M13.54 12a6.8 6.8 0 01-6.77 6.82A6.8 6.8 0 010 12a6.8 6.8 0 016.77-6.82A6.8 6.8 0 0113.54 12zM20.96 12c0 3.54-1.51 6.42-3.38 6.42-1.87 0-3.39-2.88-3.39-6.42s1.52-6.42 3.39-6.42 3.38 2.88 3.38 6.42M24 12c0 3.17-.53 5.75-1.19 5.75-.66 0-1.19-2.58-1.19-5.75s.53-5.75 1.19-5.75C23.47 6.25 24 8.83 24 12z"/>
+          </svg>
+        </a>
 
+        {/* Substack Icon */}
+        <a href="https://substack.com/@yasaswinitatikonda" target="_blank" rel="noopener noreferrer"
+           style={{
+             display:'flex',
+             alignItems:'center',
+             justifyContent:'center',
+             width:'38px',
+             height:'38px',
+             borderRadius:'50%',
+             background:ACCENT_COLOR,
+             color:'white',
+             textDecoration:'none',
+             transition:'all 0.3s cubic-bezier(0.34, 1.56, 0.64, 1)',
+             boxShadow:`0 4px 15px ${ACCENT_COLOR}40`
+           }}
+           onMouseEnter={(e) => {
+             e.currentTarget.style.transform = 'scale(1.25)';
+             e.currentTarget.style.boxShadow = `0 8px 25px ${ACCENT_COLOR}60`;
+           }}
+           onMouseLeave={(e) => {
+             e.currentTarget.style.transform = 'scale(1)';
+             e.currentTarget.style.boxShadow = `0 4px 15px ${ACCENT_COLOR}40`;
+           }}
+           title="Substack Newsletter">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+            <path d="M22.539 8.242H1.46V5.406h21.08v2.836zM1.46 10.812V24L12 18.11 22.54 24V10.812H1.46zM22.54 0H1.46v2.836h21.08V0z"/>
+          </svg>
+        </a>
+    </div>
 </div>
 
               
