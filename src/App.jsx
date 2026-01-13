@@ -12,8 +12,8 @@ const PHOTO_URL = '/profile.png';
 
 const COMPANY_LOGOS = {
   'CDS Global': '/cds-global-logo.png',
-  'Iowa State University': '/iowa-state-logo.png',
-  'Accenture': '/accenture-logo.png'
+  'Iowa State University': '/Iowa_State_University.svg',
+  'Accenture': '/accenture-logo.svg'
 };
 
 /* TECH STACK ICONS - MAPPING WITH BRAND LOGOS FROM CDN */
