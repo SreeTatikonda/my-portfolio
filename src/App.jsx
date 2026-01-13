@@ -64,54 +64,56 @@ const SKILLS = [
 
 const EXPERIENCE = [
   {
-    title:"Process Automation and AI Intern",
+    title:"Process Automation and AI Associate (CO-OP)",
     company:"CDS Global",
     companyLogo: COMPANY_LOGOS['CDS Global'],
-    duration:"May 2025 – Present | Des Moines",
-    techStack: ["Python", "FastAPI", "Flask", "Docker", "Kubernetes", "LLMs", "NLP"],
+    duration:"May 2025 – Present | Des Moines, Iowa",
+    techStack: ["Python", "FastAPI", "Docker", "Kubernetes", ".NET", "Tesseract", "BERT", "LayoutLM", "NLP"],
     points:[
-    "Built production ML pipeline using OCR, PyTorch, and NLP for automated document parsing with 97% field extraction accuracy",
-    "Implemented fine-tuning of LLMs (BERT, LayoutLM, Donut) using PyTorch and Hugging Face Transformers, achieving 83% extraction accuracy on multi-format documents",
-    "Developed FastAPI microservice with async processing and API authentication for enterprise system integration",
-    "Deployed containerized ML services on Kubernetes with autoscaling and load balancing for production workloads",
-    "Automated CI/CD pipeline with Docker containerization and testing workflows in Agile environment"
+    "Built an OCR-to-JSON extraction pipeline using Tesseract, BERT, LayoutLM and rule-based normalization, improving extraction accuracy to 88% across multiple document formats",
+    "Fine-tuned LayoutLM to handle structurally inconsistent documents, raising model accuracy to 79% and improving end-to-end extraction performance to 91%",
+    "Created evaluation datasets from 15,000+ production documents to benchmark model performance, establish accuracy baselines and validate extraction quality across document types",
+    "Designed an NLP parser that identifies and extracts required fields even when OCR output is partially recognized or incomplete, achieving 94% accuracy",
+    "Built FastAPI backend services, containerized with Docker, deployed on Kubernetes, and validated endpoints using Postman",
+    "Built a .NET executable to interface the AI pipeline with legacy production systems, enabling direct system integration",
+    "Performed GPU-based model training and evaluation across multiple architectures, establishing performance benchmarks and supporting iterative model improvement",
+    "Collaborated with cross-functional teams to interpret extraction requirements, validate output quality and align technical decisions with operational needs",
+    "Managed Git workflows for reproducible experiments, structured branching and clean release preparation"
 ]
   },
   {
-    title:"Graduate Research Assistant",
+    title:"Graduate Research Assistant (AI Full-Stack)",
     company:"Iowa State University",
     companyLogo: COMPANY_LOGOS['Iowa State University'],
-    duration:"Nov 2024 – Dec 2025 | Ames",
-    techStack: ["Python", "LLMs", "Hugging Face", "ChromaDB", "React", "TypeScript", "SQL", "Git"],
+    duration:"Nov 2024 – Present | Ames, Iowa",
+    techStack: ["Python", "LLMs", "ChromaDB", "RAG", "FastAPI", "React", "TypeScript", "Hugging Face", "LangChain"],
     points:[
-  "Built AI tutoring application with multimodal RAG pipeline using CLIP embeddings, ChromaDB vector database, LangChain orchestration, and hybrid retrieval achieving 94% citation accuracy",
-  "Implemented query routing using LangChain with cosine similarity scoring and Tavily web search API fallback for out-of-domain questions beyond RAG corpus",
-  "Developed FastAPI backend with WebSocket streaming, async request handling, and Llama 3 (Ollama) prompt caching, reducing time-to-first-token by 60%",
-  "Designed dual-database architecture with PostgreSQL for chat history and course storage, and ChromaDB vector store for semantic search",
-  "Built real-time chat interface using React, TypeScript, and WebSocket with token streaming and async state management",
-  "Created instructor analytics dashboard using React, TypeScript, Recharts, and Node.js with charts for student engagement, question categories, and response accuracy",
-  "Fine-tuned Llama models using SambaNova and Hugging Face Transformers for structured extraction from XML to JSON with 95% accuracy",
-  "Developed Flask API with data preprocessing pipeline using Python, regex parsing, and full-text search for XML data processing"
+  "Designed and implemented an evaluation framework for LLM behavior in educational contexts, establishing metrics to measure citation accuracy, grounding consistency and response reliability across 1,000+ test scenarios",
+  "Built a RAG pipeline using ChromaDB embeddings and custom ranking logic, achieving 94% citation accuracy and a 97% retrieval success rate across 500+ evaluation queries",
+  "Developed simulation workflows to test model behavior under varied retrieval conditions, measuring how the system responds when high-quality sources are unavailable or retrieval confidence is low",
+  "Integrated Llama 3 and Gemma 7B through Ollama and configured prompts using Hugging Face and LangChain tools, enabling streaming inference with a 5.1-second first-token latency and reducing hallucination rates across 1,000+ tests",
+  "Designed and implemented a FastAPI backend with authenticated endpoints, asynchronous inference routing and structured logging, supporting 120 concurrent requests with a 400 RPS design target",
+  "Implemented monitoring systems to track retrieval performance, LLM latency metrics and grounding accuracy in real-time, providing observability into model behavior and system health",
+  "Implemented retrieval-confidence scoring with a Tavily fallback path, improving grounded response consistency to 98%",
+  "Developed the React and TypeScript frontend with reusable components, state management and real-time token streaming",
+  "Optimized retrieval and prompt strategies using Hugging Face evaluation utilities, improving grounding accuracy and cutting unsupported LLM outputs by 40%",
+  "Conducted comprehensive benchmarking across multiple dimensions including retrieval precision, citation accuracy, hallucination rates and response latency, connecting technical metrics to real-world usability outcomes"
 ]
 
   },
   {
-    title:"Software Developer in App Development",
+    title:"Software Developer – App Development",
     company:"Iowa State University",
     companyLogo: COMPANY_LOGOS['Iowa State University'],
-    duration:"Feb 2024 – Sept 2025 | Ames",
-   techStack: ["React Native", "JavaScript ES6+", "Redux", "Android CameraX", "Python", "Flask", "JWT", "TensorFlow", "Keras", "Celery", "Redis", "PostgreSQL", "MongoDB", "SQLAlchemy", "pytest"],
+    duration:"Feb 2024 – Sept 2024 | Ames, Iowa",
+   techStack: ["React Native", "JavaScript", "Redux", "Flask", "JWT", "TensorFlow", "CNN", "PostgreSQL", "MongoDB", "pytest"],
     points:[
-  "Built cross-platform recommendation app using React Native, JavaScript ES6+, and Redux with 95% feature parity",
-  "Integrated Android CameraX SDK with React Native for image capture and preprocessing, handling 1000+ daily requests",
-  "Developed RESTful API using Python Flask with JWT authentication for image upload and ML prediction endpoints",
-  "Implemented CNN model using TensorFlow and Keras for hand keypoint detection achieving 92% dimensional accuracy",
-  "Designed async processing pipeline using Celery and Redis message broker, reducing API response time by 60%",
-  "Built dual-database architecture with PostgreSQL for user data and MongoDB for image metadata, improving queries by 40%",
-  "Performed load testing on PostgreSQL using Python, SQLAlchemy, and pytest with 500+ concurrent transactions, validating query optimization and indexing performance",
-  "Optimized React Native using lazy loading, FlatList virtualization, and React.memo, reducing page load time by 30%",
-  "Conducted benchmark testing on 500+ hand samples comparing ML predictions to manual measurements, achieving 94% accuracy",
-  "Implemented error handling, input validation, and logging across full stack, reducing production errors by 60%"
+  "Built a React Native mobile app using JavaScript and Redux, achieving 95% feature parity on iOS and Android",
+  "Developed Flask REST APIs with JWT authentication for secure image upload and ML inference",
+  "Integrated TensorFlow CNN models with 92% inference accuracy and supported 1,000+ image-processing requests per day",
+  "Designed a dual-database architecture using PostgreSQL for structured data and MongoDB for unstructured metadata",
+  "Improved frontend performance using lazy loading and virtualization, reducing page load time by 30%",
+  "Performed load testing with pytest, validating backend reliability under 500 concurrent transactions"
 ]
 
   },
@@ -120,17 +122,15 @@ const EXPERIENCE = [
     company:"Accenture",
     companyLogo: COMPANY_LOGOS['Accenture'],
     duration:"Oct 2022 – Dec 2023 | Bengaluru",
-    techStack: ["Java","Spring Boot", "Spring MVC", "Hibernate ORM", "SQL Server", "Redis", "AWS Lambda", "AWS S3", "AWS EC2","AWS CloudWatch", "Docker","Jenkins","Spring Security","OAuth 2.0","JWT","IAM"],
+    techStack: [".NET Core", "ASP.NET", "C#", "SQL Server", "OAuth 2.0", "Azure DevOps", "xUnit", "MSTest"],
     points:[
-  "Developed Java microservices using Spring Boot, Hibernate ORM, and SQL Server processing 100,000+ daily transactions with 99.9% uptime",
-  "Built RESTful APIs with Spring Boot and Spring MVC handling business logic and transaction management across distributed systems",
-  "Optimized REST APIs using Redis distributed caching and connection pooling, reducing response time by 58% and achieving 2.4× throughput",
-  "Designed database schemas with SQL Server using indexing strategies and Hibernate entity mapping, improving query performance by 65%",
-  "Designed ETL pipelines using AWS Lambda and S3 for real-time data processing, reducing manual intervention by 80% and improving accuracy by 60%",
-  "Implemented AWS infrastructure using EC2, Lambda, and CloudWatch for automated monitoring and performance optimization",
-  "Enhanced CI/CD pipelines with Docker and Jenkins using branching strategies and automated checks, boosting team velocity by 28%",
-  "Configured IAM security policies to comply with government regulations for 400+ B2B customers",
-  "Implemented authentication using Spring Security with OAuth 2.0 and JWT for REST APIs across microservices"
+  "Built .NET Core and ASP.NET APIs in C#, improving request performance through optimized routing and middleware design",
+  "Implemented OAuth 2.0 authentication for secure access to high-traffic internal services",
+  "Improved SQL Server performance by tuning queries and indexes, reducing latency by up to 35%",
+  "Enhanced API throughput with distributed caching and optimized data-access patterns",
+  "Created Azure DevOps pipelines for automated builds, testing and deployments, increasing release reliability",
+  "Developed unit and integration tests with xUnit and MSTest to reduce regression issues in production",
+  "Supported feature development and production deployments for services handling 100,000+ daily transactions"
 ]
 
   }
