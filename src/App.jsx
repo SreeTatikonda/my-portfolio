@@ -8,7 +8,7 @@ const TEXT_SUBTLE = '#6B6B6B';
 const NAV_HEIGHT = '60px';
 const GRADIENT_ACCENT = 'linear-gradient(135deg, #F6A25A 0%, #FF8C42 100%)';
 
-const PHOTO_URL = '/profile.svg';
+const PHOTO_URL = '/profile.png';
 
 const COMPANY_LOGOS = {
   'CDS Global': '/cds-global-logo.svg',
@@ -985,16 +985,26 @@ const App = () => {
                 marginBottom:'1rem',
                 lineHeight:1.2
               }}>
-                Hi, I'm <span style={{background:GRADIENT_ACCENT,WebkitBackgroundClip:'text',WebkitTextFillColor:'transparent',backgroundClip:'text'}}>Yasaswini</span>
+                <span style={{background:GRADIENT_ACCENT,WebkitBackgroundClip:'text',WebkitTextFillColor:'transparent',backgroundClip:'text'}}>Yasaswini Tatikonda</span>
               </h2>
               <p style={{
                 fontSize:'clamp(1rem, 2.3vw, 1.2rem)',
+                color:ACCENT_COLOR,
+                marginBottom:'0.5rem',
+                lineHeight:1.7,
+                fontWeight:700
+              }}>
+                Full-Stack Engineer | AI/ML Specialist
+              </p>
+              <p style={{
+                fontSize:'clamp(0.95rem, 2.2vw, 1.1rem)',
                 color:TEXT_SUBTLE,
                 marginBottom:'1.5rem',
                 lineHeight:1.7,
                 fontWeight:500
               }}>
-                Software Engineer with <span style={{color:ACCENT_COLOR,fontWeight:800}}>3+ years</span> of experience building <span style={{color:ACCENT_COLOR,fontWeight:700}}>intelligent AI systems</span> and scalable enterprise solutions.
+                MS in CS @ Iowa State | 3+ years in production ML & full-stack engineering<br/>
+                Building RAG pipelines, microservices, and intelligent systems at scale.
               </p>
               <div style={{display:'flex',gap:'1rem',flexWrap:'wrap'}}>
                 <button onClick={()=>scrollTo('projects')}
